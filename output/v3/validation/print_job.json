@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-10-18T18:27:23.449924-07:00",
+  "printer": "3DP-039-180",
+  "model": "Bambu Lab A1",
+  "job": "Holder_V3_A1_PLA_PROTOTYPE",
+  "parts": [
+    "left_insert_PROTOTYPE",
+    "right_insert_PROTOTYPE"
+  ],
+  "project_sha256": "0a515cf9f864754d2c938960855e4ab6701012bd3e87b0bd07daa623a32b0186",
+  "status_observed": "Heatbed preheating",
+  "progress_percent": 0,
+  "layer": "0/27",
+  "estimated_duration": "1h17min59s",
+  "estimated_finish_time_displayed": "19:43",
+  "filament_grams": 31.35,
+  "filament": "PLA",
+  "ams_slot": "A1",
+  "orientation": "Both inserts phone face down; nub openings widen upward while printing",
+  "auto_bed_leveling": true,
+  "flow_dynamics_calibration": true,
+  "timelapse": false,
+  "plate_check": "Live camera showed no printed parts on the build plate before sending",
+  "evidence": "Bambu Studio confirmed successful send and device page displayed this V3 job in Heatbed preheating with Pause and Stop controls."
+}

@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "design_status": "DRAFT: nub Y positions unconfirmed",
+  "mesh_count": 11,
+  "mesh_checks": [
+    {
+      "file": "output/v3/left_insert_PROTOTYPE.stl",
+      "sha256": "107a43b3b54547250778f6be03d441bdac59a2d75205a907a38be3f8d719d3c9",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00561
+    },
+    {
+      "file": "output/v3/right_insert_PROTOTYPE.stl",
+      "sha256": "521469510fa6e61cbc21a5637e2007da44027210a5ee71d6a49a4d6b8299bb3d",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00106
+    },
+    {
+      "file": "output/v3/fit_tests/left_nub_U_gauge_03.stl",
+      "sha256": "fa63f02dce212a32d607eec04a19d55dde548506e9fe77d419404308c50c2d10",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00655
+    },
+    {
+      "file": "output/v3/fit_tests/right_nub_U_gauge_03.stl",
+      "sha256": "b8258f7b3a6a6c4103d1e953ecd04a23bfc74648d8312eb5aa982ac39810f478",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00351
+    },
+    {
+      "file": "output/v3/fit_tests/camera_ring_gauge_03.stl",
+      "sha256": "fc1906c0aff18a30eab24075936d2d234283c370c9f272bd8af1979cc96b17a2",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00514
+    },
+    {
+      "file": "output/v3/fit_tests/left_nub_U_gauge_05.stl",
+      "sha256": "bbdd53f3cf6b78f659cfb9052da35dcc8ce7f600b9b634c19b1bd9376b3d78d7",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00668
+    },
+    {
+      "file": "output/v3/fit_tests/right_nub_U_gauge_05.stl",
+      "sha256": "fcd216e6922b0b27ec6677a50d66c87a9562e15872a28952593a4aeb199eac4c",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00359
+    },
+    {
+      "file": "output/v3/fit_tests/camera_ring_gauge_05.stl",
+      "sha256": "f7913f5e8731d295e7ddfeecfb2bcc8813e7ab2737fca1cadacf202256eec9b7",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00521
+    },
+    {
+      "file": "output/v3/fit_tests/left_nub_U_gauge_08.stl",
+      "sha256": "f70a6e543c4150aa37fe4eb241748abb3eb1fe9065146fe3a5e6459878b791dd",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00693
+    },
+    {
+      "file": "output/v3/fit_tests/right_nub_U_gauge_08.stl",
+      "sha256": "17953f92c75d42b69a6e7b5e947475de721ccbeb1eff368de91ad6eec8c0132e",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00373
+    },
+    {
+      "file": "output/v3/fit_tests/camera_ring_gauge_08.stl",
+      "sha256": "6493d1f1a8c0ebf2ac45dcffaa60556d0e4b9314d0ba877dfec0abd8a2beb34e",
+      "watertight_single_solid": true,
+      "cad_volume_difference_percent": 0.00542
+    }
+  ],
+  "projects": [
+    {
+      "project": "Holder_V3_DRAFT_A1_PLA.3mf",
+      "objects": 2,
+      "layers": 27,
+      "slice_success": true,
+      "slicing_warnings": [],
+      "support_toolpaths": false,
+      "estimated_minutes": 84.9,
+      "estimated_grams": 33.77,
+      "all_objects_on_bed_and_within_A1_plate": true,
+      "embedded_settings_verified_against_effective_slicer_settings": true,
+      "raised_label_extrusion_segments": null,
+      "sha256": "c081c96c2c57e2b18bbb593158504a518f92ce48c52b5b245572d5e04e89f46a"
+    },
+    {
+      "project": "Fit_tests_V3_A1_PLA.3mf",
+      "objects": 9,
+      "layers": 30,
+      "slice_success": true,
+      "slicing_warnings": [],
+      "support_toolpaths": false,
+      "estimated_minutes": 95.5,
+      "estimated_grams": 45.47,
+      "all_objects_on_bed_and_within_A1_plate": true,
+      "embedded_settings_verified_against_effective_slicer_settings": true,
+      "raised_label_extrusion_segments": {
+        "camera_ring_gauge_03": 161,
+        "camera_ring_gauge_05": 162,
+        "camera_ring_gauge_08": 184,
+        "left_nub_U_gauge_03": 155,
+        "left_nub_U_gauge_05": 152,
+        "left_nub_U_gauge_08": 169,
+        "right_nub_U_gauge_03": 189,
+        "right_nub_U_gauge_05": 185,
+        "right_nub_U_gauge_08": 205
+      },
+      "sha256": "4b12a9d467bd951414c78d7031fd14831a6e85d72a64fb4ec16acaa36ad73de6"
+    }
+  ],
+  "scan_sample_check": {
+    "raised_camera_vertices_checked": 461,
+    "height_threshold_above_fitted_back_mm": 1.0,
+    "outside_camera_relief": 0,
+    "inside_insert_footprints": {
+      "left": 0,
+      "right": 0
+    },
+    "limit": "Sampled noisy scan vertices only; low relief, full surfaces, actual fit and height remain physical checks."
+  },
+  "actual_STL_taper_sections": [
+    {
+      "part": "left",
+      "height_mm": 1.0,
+      "measured_STL_slot_width_mm": 16.7778,
+      "expected_mm": 16.7778
+    },
+    {
+      "part": "left",
+      "height_mm": 2.7,
+      "measured_STL_slot_width_mm": 13.0,
+      "expected_mm": 13.0
+    },
+    {
+      "part": "left",
+      "height_mm": 4.4,
+      "measured_STL_slot_width_mm": 9.2222,
+      "expected_mm": 9.2222
+    },
+    {
+      "part": "right",
+      "height_mm": 1.0,
+      "measured_STL_slot_width_mm": 16.7778,
+      "expected_mm": 16.7778
+    },
+    {
+      "part": "right",
+      "height_mm": 2.7,
+      "measured_STL_slot_width_mm": 13.0,
+      "expected_mm": 13.0
+    },
+    {
+      "part": "right",
+      "height_mm": 4.4,
+      "measured_STL_slot_width_mm": 9.2222,
+      "expected_mm": 9.2222
+    }
+  ],
+  "print_taper_has_no_downward_faces_between_rim_chamfers": true,
+  "physical_checks_pending": [
+    "confirm lower-ledge-to-nub-bottom distances",
+    "nub width taper and rounded end shape",
+    "left wall slope/contact",
+    "camera housing outline and vertical engagement",
+    "repeatable phone placement",
+    "10-minute stationary charging comparison",
+    "cabin heat / final material"
+  ],
+  "build_plate_assumption": "Textured PEI Plate; select the actual installed plate before printing."
+}

@@ -1,0 +1,25 @@
+{
+  "source": "iphone table scan.glb",
+  "scale_mm_per_scan_unit": 176.95750058377575,
+  "phone_width_calibration_mm": 72.1,
+  "phone_scan_length_mm": 150.10461136899204,
+  "rotation_across_xz": [
+    0.9853814885608255,
+    0.17036232565227516
+  ],
+  "rotation_toward_camera_xz": [
+    0.17036232565227516,
+    -0.9853814885608255
+  ],
+  "scan_origin_xz_aligned": [
+    0.0325086991213957,
+    -0.8039300210978247
+  ],
+  "flat_back_plane_coefficients": [
+    -0.0018399363754764274,
+    -0.0021888597134290554,
+    0.08043544036420905
+  ],
+  "flat_back_rms_residual_mm": 0.1803860841892613,
+  "note": "X/Y calibrated uniformly from measured phone width. Scan height is noisy; actual 8.8/11.7/13.8 mm caliper totals govern vertical design."
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "project": "Holder_V3_DRAFT_A1_PLA.3mf",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "left_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            25.0,
+            25.0,
+            0.0
+          ],
+          [
+            72.8154,
+            171.75,
+            5.4
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      },
+      {
+        "name": "right_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            82.8154,
+            25.0,
+            0.0
+          ],
+          [
+            117.3154,
+            205.0,
+            5.4
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      }
+    ],
+    "log": "validation/Holder_V3_DRAFT_A1_PLA_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  },
+  {
+    "project": "Fit_tests_V3_A1_PLA.3mf",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "camera_ring_gauge_03",
+        "bounds_mm": [
+          [
+            8.0,
+            8.0,
+            0.0
+          ],
+          [
+            78.9,
+            64.9,
+            3.0
+          ]
+        ],
+        "print_orientation": "label face up"
+      },
+      {
+        "name": "camera_ring_gauge_05",
+        "bounds_mm": [
+          [
+            88.9,
+            8.0,
+            0.0
+          ],
+          [
+            160.2,
+            65.3,
+            3.0
+          ]
+        ],
+        "print_orientation": "label face up"
+      },
+      {
+        "name": "camera_ring_gauge_08",
+        "bounds_mm": [
+          [
+            170.2,
+            8.0,
+            0.0
+          ],
+          [
+            242.1,
+            65.9,
+            3.0
+          ]
+        ],
+        "print_orientation": "label face up"
+      },
+      {
+        "name": "left_nub_U_gauge_03",
+        "bounds_mm": [
+          [
+            8.0,
+            75.9,
+            0.0
+          ],
+          [
+            31.4,
+            150.7977,
+            6.0
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      },
+      {
+        "name": "left_nub_U_gauge_05",
+        "bounds_mm": [
+          [
+            41.4,
+            75.9,
+            0.0
+          ],
+          [
+            65.2,
+            151.1977,
+            6.0
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      },
+      {
+        "name": "left_nub_U_gauge_08",
+        "bounds_mm": [
+          [
+            75.2,
+            75.9,
+            0.0
+          ],
+          [
+            99.6,
+            151.7976,
+            6.0
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      },
+      {
+        "name": "right_nub_U_gauge_03",
+        "bounds_mm": [
+          [
+            109.6,
+            75.9,
+            0.0
+          ],
+          [
+            133.0,
+            221.9177,
+            6.0
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      },
+      {
+        "name": "right_nub_U_gauge_05",
+        "bounds_mm": [
+          [
+            143.0,
+            75.9,
+            0.0
+          ],
+          [
+            166.8,
+            222.3176,
+            6.0
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      },
+      {
+        "name": "right_nub_U_gauge_08",
+        "bounds_mm": [
+          [
+            176.8,
+            75.9,
+            0.0
+          ],
+          [
+            201.2,
+            222.9176,
+            6.0
+          ]
+        ],
+        "print_orientation": "phone face down, tapered slot widens upward"
+      }
+    ],
+    "log": "validation/Fit_tests_V3_A1_PLA_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  }
+]

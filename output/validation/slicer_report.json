@@ -1,0 +1,183 @@
+[
+  {
+    "project": "Holder_A1_PLA_PROTOTYPE.3mf",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "left_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            25.0,
+            25.0,
+            0.0
+          ],
+          [
+            58.5,
+            158.9983,
+            2.4
+          ]
+        ]
+      },
+      {
+        "name": "right_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            68.5,
+            25.0,
+            0.0
+          ],
+          [
+            99.0,
+            162.0,
+            2.4
+          ]
+        ]
+      }
+    ],
+    "log": "validation/Holder_A1_PLA_PROTOTYPE_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  },
+  {
+    "project": "Fit_tests_A1_PLA.3mf",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "camera_ring_gauge_03",
+        "bounds_mm": [
+          [
+            25.0,
+            25.0,
+            0.0
+          ],
+          [
+            95.9,
+            70.9,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "camera_ring_gauge_05",
+        "bounds_mm": [
+          [
+            105.9,
+            25.0,
+            0.0
+          ],
+          [
+            177.2,
+            71.3,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "camera_ring_gauge_08",
+        "bounds_mm": [
+          [
+            25.0,
+            81.3,
+            0.0
+          ],
+          [
+            96.9,
+            128.2,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "left_nub_U_gauge_03",
+        "bounds_mm": [
+          [
+            106.9,
+            81.3,
+            0.0
+          ],
+          [
+            129.3,
+            105.7377,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "left_nub_U_gauge_05",
+        "bounds_mm": [
+          [
+            139.3,
+            81.3,
+            0.0
+          ],
+          [
+            162.1,
+            105.6297,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "left_nub_U_gauge_08",
+        "bounds_mm": [
+          [
+            172.1,
+            81.3,
+            0.0
+          ],
+          [
+            195.5,
+            105.4655,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "right_nub_U_gauge_03",
+        "bounds_mm": [
+          [
+            205.5,
+            81.3,
+            0.0
+          ],
+          [
+            228.9,
+            105.4655,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "right_nub_U_gauge_05",
+        "bounds_mm": [
+          [
+            25.0,
+            138.2,
+            0.0
+          ],
+          [
+            48.8,
+            162.2545,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "right_nub_U_gauge_08",
+        "bounds_mm": [
+          [
+            58.8,
+            138.2,
+            0.0
+          ],
+          [
+            83.2,
+            162.0854,
+            3.0
+          ]
+        ]
+      }
+    ],
+    "log": "validation/Fit_tests_A1_PLA_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  }
+]

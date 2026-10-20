@@ -50,7 +50,7 @@ def presets(out):
         (out/f"{name}.json").write_text(json.dumps(data,indent=2)+"\n")
 
 
-def create_geometry_3mf(paths,target,settings=None):
+def create_geometry_3mf(paths,target,settings=None,margin=25.):
     """Build a deterministic multi-object print layout, at Z=0, without nesting.
 
     3MF has explicit millimeter units. Separate objects retain useful names.
@@ -63,7 +63,7 @@ def create_geometry_3mf(paths,target,settings=None):
     ET.register_namespace("",ns)
     tag=lambda x:f"{{{ns}}}{x}"
     model=ET.Element(tag("model"),unit="millimeter",attrib={"xml:lang":"en-US"})
-    ET.SubElement(model,tag("metadata"),name="Title").text="Tesla holder fit prototype"
+    ET.SubElement(model,tag("metadata"),name="Title").text=target.stem
     # Bambu's importer recognizes native project settings only when Application
     # begins with BambuStudio-. This is a compatibility marker; preserve the
     # actual generator separately in Description.
@@ -73,15 +73,20 @@ def create_geometry_3mf(paths,target,settings=None):
         ET.SubElement(model,tag("metadata"),name="BambuStudio:3mfVersion").text="1"
     config=ET.Element("config")
     resources=ET.SubElement(model,tag("resources"));build=ET.SubElement(model,tag("build"))
-    x,y,row_h=25.,25.,0.
+    x,y,row_h=margin,margin,0.
     placements=[]
     for i,path in enumerate(paths,1):
         mesh=trimesh.load_mesh(path,process=True)
+        flip="insert_PROTOTYPE" in path.stem or "nub" in path.stem
+        if flip:
+            # Phone-side down: the slot widens upward during printing, so the
+            # tapered walls retreat into supported material on successive layers.
+            mesh.apply_transform(trimesh.transformations.rotation_matrix(3.141592653589793,[1,0,0]))
         mesh.apply_translation(-mesh.bounds[0])
         w,h,_=mesh.extents
-        if x+w>232:
-            x=25.;y+=row_h+10;row_h=0.
-        if y+h>235: raise ValueError(f"Objects exceed plate: {path.name}")
+        if x+w>256-margin:
+            x=margin;y+=row_h+10;row_h=0.
+        if y+h>256-margin: raise ValueError(f"Objects exceed plate: {path.name}")
         mesh.apply_translation([x,y,0])
         mesh_id,object_id=2*i-1,2*i
         obj=ET.SubElement(resources,tag("object"),id=str(mesh_id),type="model",name=path.stem)
@@ -101,7 +106,8 @@ def create_geometry_3mf(paths,target,settings=None):
         ET.SubElement(part,"metadata",key="name",value=path.stem)
         ET.SubElement(part,"metadata",key="matrix",value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1")
         ET.SubElement(part,"mesh_stat",edges_fixed="0",degenerate_facets="0",facets_removed="0",facets_reversed="0",backwards_edges="0")
-        placements.append({"name":path.stem,"bounds_mm":mesh.bounds.round(4).tolist()})
+        placements.append({"name":path.stem,"bounds_mm":mesh.bounds.round(4).tolist(),
+                           "print_orientation":"phone face down, tapered slot widens upward" if flip else "label face up"})
         x+=w+10;row_h=max(row_h,h)
     plate=ET.SubElement(config,"plate")
     ET.SubElement(plate,"metadata",key="plater_id",value="1")
@@ -125,7 +131,7 @@ def create_geometry_3mf(paths,target,settings=None):
     return placements
 
 
-def run_project(out,name,paths):
+def run_project(out,name,paths,margin=25.):
     folder=out/"slicer"/name;folder.mkdir(exist_ok=True)
     project=out/(name+".3mf")
     settings={}
@@ -133,7 +139,7 @@ def run_project(out,name,paths):
     for key in ("machine","process","filament"):
         settings.update({k:v for k,v in json.loads((out/"slicer"/(key+".json")).read_text()).items() if k not in ignored})
     settings["version"]="02.08.02.61"
-    placements=create_geometry_3mf(paths,project,settings=settings)
+    placements=create_geometry_3mf(paths,project,settings=settings,margin=margin)
     cmd=[str(EXE),"--debug","2","--datadir",str(out/"slicer"/"isolated_config"),
          "--arrange","0","--orient","0","--ensure-on-bed",
          "--slice","0","--export-settings",str(folder/"effective_settings.json"),
@@ -151,18 +157,18 @@ def run_project(out,name,paths):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--output",type=Path,default=ROOT/"output")
+    ap.add_argument("--output",type=Path,default=ROOT/"output/v3")
     ap.add_argument("--presets-only",action="store_true")
     args=ap.parse_args();out=args.output.resolve()
     (out/"slicer").mkdir(exist_ok=True)
     presets(out/"slicer")
     if args.presets_only: return
     reports=[]
-    reports.append(run_project(out,"Holder_A1_PLA_PROTOTYPE",[out/f"{s}_insert_PROTOTYPE.stl" for s in ("left","right")]))
+    reports.append(run_project(out,"Holder_V3_A1_PLA_PROTOTYPE",[out/f"{s}_insert_PROTOTYPE.stl" for s in ("left","right")]))
     # Three full camera rings plus six end gauges comfortably fit one A1 plate
     # when the camera rings are placed first in a row.
     coupons=sorted((out/"fit_tests").glob("camera*.stl"))+sorted((out/"fit_tests").glob("*nub*.stl"))
-    reports.append(run_project(out,"Fit_tests_A1_PLA",coupons))
+    reports.append(run_project(out,"Fit_tests_V3_A1_PLA",coupons,margin=8.))
     (out/"validation"/"slicer_report.json").write_text(json.dumps(reports,indent=2)+"\n")
     print("Both Bambu projects exported and sliced.",flush=True)
 

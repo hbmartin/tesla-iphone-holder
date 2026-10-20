@@ -1,0 +1,177 @@
+{
+    "error_string": "Success.",
+    "export_time": 0,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 141,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 57.85025405883789,
+                "Bridge": 40.80936050415039,
+                "Custom": 368.48211669921875,
+                "Flush": 25.0,
+                "Gap infill": 42.000648498535156,
+                "Inner wall": 353.3716735839844,
+                "Internal solid infill": 152.5070343017578,
+                "Outer wall": 247.92324829101563,
+                "Sparse infill": 22.585718154907227,
+                "Top surface": 126.93608856201172,
+                "Travel": 189.54684448242188,
+                "Undefined": 172.99180603027344
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "unknown",
+                    "id": 1,
+                    "main_used_g": 9.401238441467285,
+                    "total_used_g": 9.401238441467285
+                }
+            ],
+            "generate_support_material_time": 13,
+            "id": 1,
+            "infill_time": 157,
+            "layer_filament_change": 0,
+            "main_predication": 1208.5050048828125,
+            "make_perimeters_time": 98,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 56.900001525878906,
+                        "height": 3.0,
+                        "width": 70.9000015258789,
+                        "x": 25.0,
+                        "y": 25.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "camera_ring_gauge_03",
+                    "triangle_count": 15972
+                },
+                {
+                    "bbox": {
+                        "depth": 57.29999542236328,
+                        "height": 3.0,
+                        "width": 71.30000305175781,
+                        "x": 105.90000915527344,
+                        "y": 25.0,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "camera_ring_gauge_05",
+                    "triangle_count": 13582
+                },
+                {
+                    "bbox": {
+                        "depth": 57.90000534057617,
+                        "height": 3.0,
+                        "width": 71.9000015258789,
+                        "x": 25.0,
+                        "y": 92.29998779296875,
+                        "z": 0.0
+                    },
+                    "id": 13,
+                    "name": "camera_ring_gauge_08",
+                    "triangle_count": 17622
+                },
+                {
+                    "bbox": {
+                        "depth": 21.399066925048828,
+                        "height": 3.0,
+                        "width": 34.40000534057617,
+                        "x": 106.89999389648438,
+                        "y": 92.30000305175781,
+                        "z": 0.0
+                    },
+                    "id": 17,
+                    "name": "left_nub_U_gauge_03",
+                    "triangle_count": 12354
+                },
+                {
+                    "bbox": {
+                        "depth": 21.2650146484375,
+                        "height": 3.0,
+                        "width": 34.800010681152344,
+                        "x": 151.29998779296875,
+                        "y": 92.29999542236328,
+                        "z": 0.0
+                    },
+                    "id": 21,
+                    "name": "left_nub_U_gauge_05",
+                    "triangle_count": 9966
+                },
+                {
+                    "bbox": {
+                        "depth": 21.065074920654297,
+                        "height": 3.0,
+                        "width": 35.399993896484375,
+                        "x": 196.10000610351563,
+                        "y": 92.29998779296875,
+                        "z": 0.0
+                    },
+                    "id": 25,
+                    "name": "left_nub_U_gauge_08",
+                    "triangle_count": 13980
+                },
+                {
+                    "bbox": {
+                        "depth": 21.399070739746094,
+                        "height": 3.0,
+                        "width": 34.400001525878906,
+                        "x": 25.0,
+                        "y": 160.19998168945313,
+                        "z": 0.0
+                    },
+                    "id": 29,
+                    "name": "right_nub_U_gauge_03",
+                    "triangle_count": 14196
+                },
+                {
+                    "bbox": {
+                        "depth": 21.2650146484375,
+                        "height": 3.0,
+                        "width": 34.79999923706055,
+                        "x": 69.39999389648438,
+                        "y": 160.1999969482422,
+                        "z": 0.0
+                    },
+                    "id": 33,
+                    "name": "right_nub_U_gauge_05",
+                    "triangle_count": 11846
+                },
+                {
+                    "bbox": {
+                        "depth": 21.065086364746094,
+                        "height": 3.0,
+                        "width": 35.40000915527344,
+                        "x": 114.20000457763672,
+                        "y": 160.19998168945313,
+                        "z": 0.0
+                    },
+                    "id": 37,
+                    "name": "right_nub_U_gauge_08",
+                    "triangle_count": 15878
+                }
+            ],
+            "sliced_time": 618,
+            "sliced_time_with_cache": 325,
+            "total_predication": 1610.4320068359375,
+            "triangle_count": 125396,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 20.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 3
+}

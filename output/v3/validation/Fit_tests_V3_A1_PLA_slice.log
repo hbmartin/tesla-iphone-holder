@@ -1,0 +1,14 @@
+[2026-10-18 18:21:12.631010] [0x00000001fe2fe300] [trace]   Initializing StaticPrintConfigs
+[2026-10-18 18:21:12.637038] [0x00000001fe2fe300] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-10-18 18:21:12.829195] [0x00000001fe2fe300] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab A1 0.4 nozzle.json 
+[2026-10-18 18:21:12.829218] [0x00000001fe2fe300] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/Tesla holder PROTOTYPE - A1 0.20mm.json 
+[2026-10-18 18:21:12.829963] [0x00000001fe2fe300] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-10-18 18:21:13.267879] [0x000000016d8b7000] [warning] tree support default to organic support
+[2026-10-18 18:21:13.267923] [0x000000016d4ab000] [warning] tree support default to organic support
+[2026-10-18 18:21:13.267954] [0x000000016b44b000] [warning] tree support default to organic support
+[2026-10-18 18:21:13.267972] [0x000000016b857000] [warning] tree support default to organic support
+[2026-10-18 18:21:13.267991] [0x000000016bc63000] [warning] tree support default to organic support
+[2026-10-18 18:21:13.268013] [0x000000016d09f000] [warning] tree support default to organic support
+[2026-10-18 18:21:13.268036] [0x00000001fe2fe300] [warning] tree support default to organic support
+[2026-10-18 18:21:13.268057] [0x000000016c47b000] [warning] tree support default to organic support
+[2026-10-18 18:21:13.268075] [0x000000016dcc3000] [warning] tree support default to organic support

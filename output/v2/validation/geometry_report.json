@@ -1,0 +1,412 @@
+{
+  "revision": "prototype-v2",
+  "units": "mm",
+  "parameters": {
+    "units": "mm",
+    "revision": "prototype-v2",
+    "phone_width": 72.1,
+    "phone_length": 150.0,
+    "phone_depth": 8.8,
+    "phone_center_x": 46.5,
+    "phone_bottom_y": 0.0,
+    "phone_corner_radius": 11.0,
+    "left_nub_x": 0.0,
+    "left_nub_y": 122.5,
+    "left_nub_width": 18.0,
+    "left_nub_length": 42.0,
+    "right_nub_x": 93.0,
+    "right_nub_y": 103.5,
+    "right_nub_width": 18.0,
+    "right_nub_length": 120.0,
+    "nub_clearance": 0.5,
+    "camera_width": 65.5,
+    "camera_length": 46.0,
+    "camera_top_offset": 3.0,
+    "camera_center_offset_x": 0.0,
+    "camera_corner_radius": 6.0,
+    "camera_clearance": 0.5,
+    "thickness": 5.4,
+    "edge_chamfer": 0.2,
+    "hex_flat_to_flat": 6.0,
+    "hex_web": 1.6,
+    "solid_border": 2.4,
+    "left_outer_x_min": -15.5,
+    "left_wing_x_max": 25.0,
+    "left_wing_y_min": 14.0,
+    "left_wing_y_max": 118.0,
+    "left_wing_corner_radius": 8.5,
+    "left_nub_collar_border": 6.0,
+    "right_outer_x_min": 74.0,
+    "right_outer_x_max": 108.5,
+    "right_outer_y_min": 35.0,
+    "right_outer_y_max": 172.0,
+    "right_corner_radius": 9.0,
+    "charging_open_radius": 28.5,
+    "charging_open_offset_x": 0.0,
+    "charging_open_offset_y": 75.0,
+    "fit_clearances": [
+      0.3,
+      0.5,
+      0.8
+    ],
+    "_notes": {
+      "datum": "XY is the sloped console surface, not world-horizontal. X=0 is the estimated left nub centerline; Y=0 is the factory lower phone ledge. Z=0 is the console surface. Phone camera end is +Y.",
+      "phone": "Width 72.1 and main-body thickness 8.8 mm measured by user. Total thickness with housing 11.7 mm; including lenses 13.8 mm. Width-calibrated scan length 150.10 mm supports retained 150.0 mm nominal length. Corner radius remains estimated.",
+      "console": "User measured gently rounded bases about 18 mm wide each and confirmed a 75 mm clear edge-to-edge gap. Centerline spacing is 9 + 75 + 9 = 93 mm. Nub base lengths 42/120 mm, end shapes, and fore-aft positions remain photo estimates; through-slots clear the entire base width without a guessed nub height.",
+      "camera": "V1 C05 width was about right but opening was too short. Retain 65.5 mm nominal width (66.5 mm C05 opening). Calibrated scan suggests about 44 mm raised camera region; include 2 mm additional lower blending relief, for a conservative 46.0 mm envelope and 3.0 mm top setback. This clears all 461 sampled scan vertices more than 1 mm above the fitted back within the camera region. Length, setback and 6 mm corner radius remain scan estimates, not caliper measurements. Housing projection: 11.7 - 8.8 = 2.9 mm; lens-tip projection: 13.8 - 8.8 = 5.0 mm.",
+      "charging": "The 57 mm opening stays free of plastic, but the phone back is now supported 5.4 mm above the pad. Open space alone does not guarantee wireless charging. Recheck stationary charging against the original bare-phone position before use.",
+      "prototype": "V2 corrects v1 camera fit failure using user measurements and a calibrated tabletop scan. Both nub and camera outlines still require fit tests. Labels begin with 2 to distinguish the new coupons. No v2 print has been requested or sent.",
+      "height": "5.4 mm body-support height leaves 0.4 mm below the 5.0 mm lens projection above an ideal flat pad. Full camera relief is open through. Fit coupons stay 2.4 mm thick and test XY outline only. No recessed pad or fabric compression is assumed."
+    },
+    "phone_body_plus_bump": 11.7,
+    "phone_body_plus_lenses": 13.8,
+    "nub_base_gap": 75.0,
+    "lens_to_pad_clearance": 0.4,
+    "coupon_thickness": 2.4,
+    "coupon_prefix": "2"
+  },
+  "parts": [
+    {
+      "file": "output/v2/left_insert_PROTOTYPE.stl",
+      "kind": "insert",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 5208,
+      "bounds_mm": [
+        [
+          -15.5,
+          14.0,
+          -0.0
+        ],
+        [
+          25.0,
+          149.9987,
+          5.4
+        ]
+      ],
+      "size_mm": [
+        40.5,
+        135.9987,
+        5.4
+      ],
+      "volume_mm3": 14640.591,
+      "cad_volume_mm3": 14639.883,
+      "hexagonal_openings": 38,
+      "min_hex_to_boundary_mm_before_chamfer": 3.0,
+      "min_hex_web_mm_before_chamfer": 2.0
+    },
+    {
+      "file": "output/v2/right_insert_PROTOTYPE.stl",
+      "kind": "insert",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 3352,
+      "bounds_mm": [
+        [
+          74.0,
+          35.0,
+          -0.0
+        ],
+        [
+          108.5,
+          172.0,
+          5.4
+        ]
+      ],
+      "size_mm": [
+        34.5,
+        137.0,
+        5.4
+      ],
+      "volume_mm3": 11712.283,
+      "cad_volume_mm3": 11711.866,
+      "hexagonal_openings": 0,
+      "min_hex_to_boundary_mm_before_chamfer": null,
+      "min_hex_web_mm_before_chamfer": null
+    },
+    {
+      "file": "output/v2/fit_tests/left_nub_U_gauge_03.stl",
+      "kind": "nub_width_end_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 12354,
+      "bounds_mm": [
+        [
+          -11.7,
+          0.0002,
+          0.0
+        ],
+        [
+          22.7,
+          21.3993,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        34.4,
+        21.3991,
+        3.0
+      ],
+      "volume_mm3": 584.544,
+      "cad_volume_mm3": 584.627
+    },
+    {
+      "file": "output/v2/fit_tests/right_nub_U_gauge_03.stl",
+      "kind": "nub_width_end_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 14196,
+      "bounds_mm": [
+        [
+          -11.7,
+          0.0002,
+          0.0
+        ],
+        [
+          22.7,
+          21.3993,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        34.4,
+        21.3991,
+        3.0
+      ],
+      "volume_mm3": 585.872,
+      "cad_volume_mm3": 585.956
+    },
+    {
+      "file": "output/v2/fit_tests/camera_ring_gauge_03.stl",
+      "kind": "camera_envelope_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 15972,
+      "bounds_mm": [
+        [
+          -35.45,
+          -31.2,
+          -0.0
+        ],
+        [
+          35.45,
+          25.7,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        70.9,
+        56.9,
+        3.0
+      ],
+      "volume_mm3": 1505.804,
+      "cad_volume_mm3": 1505.882
+    },
+    {
+      "file": "output/v2/fit_tests/left_nub_U_gauge_05.stl",
+      "kind": "nub_width_end_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 9966,
+      "bounds_mm": [
+        [
+          -11.9,
+          0.0016,
+          0.0
+        ],
+        [
+          22.9,
+          21.2666,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        34.8,
+        21.265,
+        3.0
+      ],
+      "volume_mm3": 584.732,
+      "cad_volume_mm3": 584.821
+    },
+    {
+      "file": "output/v2/fit_tests/right_nub_U_gauge_05.stl",
+      "kind": "nub_width_end_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 11846,
+      "bounds_mm": [
+        [
+          -11.9,
+          0.0016,
+          0.0
+        ],
+        [
+          22.9,
+          21.2666,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        34.8,
+        21.265,
+        3.0
+      ],
+      "volume_mm3": 586.06,
+      "cad_volume_mm3": 586.149
+    },
+    {
+      "file": "output/v2/fit_tests/camera_ring_gauge_05.stl",
+      "kind": "camera_envelope_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 13582,
+      "bounds_mm": [
+        [
+          -35.65,
+          -31.4,
+          -0.0
+        ],
+        [
+          35.65,
+          25.9,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        71.3,
+        57.3,
+        3.0
+      ],
+      "volume_mm3": 1513.159,
+      "cad_volume_mm3": 1513.238
+    },
+    {
+      "file": "output/v2/fit_tests/left_nub_U_gauge_08.stl",
+      "kind": "nub_width_end_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 13980,
+      "bounds_mm": [
+        [
+          -12.2,
+          0.0013,
+          0.0
+        ],
+        [
+          23.2,
+          21.0664,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        35.4,
+        21.0651,
+        3.0
+      ],
+      "volume_mm3": 585.005,
+      "cad_volume_mm3": 585.093
+    },
+    {
+      "file": "output/v2/fit_tests/right_nub_U_gauge_08.stl",
+      "kind": "nub_width_end_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 15878,
+      "bounds_mm": [
+        [
+          -12.2,
+          0.0013,
+          0.0
+        ],
+        [
+          23.2,
+          21.0664,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        35.4,
+        21.0651,
+        3.0
+      ],
+      "volume_mm3": 586.332,
+      "cad_volume_mm3": 586.422
+    },
+    {
+      "file": "output/v2/fit_tests/camera_ring_gauge_08.stl",
+      "kind": "camera_envelope_gauge",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 17622,
+      "bounds_mm": [
+        [
+          -35.95,
+          -31.7,
+          -0.0
+        ],
+        [
+          35.95,
+          26.2,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        71.9,
+        57.9,
+        3.0
+      ],
+      "volume_mm3": 1524.086,
+      "cad_volume_mm3": 1524.169
+    }
+  ],
+  "measured_dimension_checks": {
+    "camera_housing_projection_mm": 2.9,
+    "lens_tip_projection_mm": 5.0,
+    "lens_to_flat_pad_clearance_mm": 0.4,
+    "nub_base_clear_gap_mm": 75.0
+  },
+  "assembly_checks": {
+    "inserts_do_not_overlap": true,
+    "nominal_nubs_clear": true,
+    "nominal_camera_envelope_clear": true
+  },
+  "physical_validation": {
+    "console_fit": "not tested",
+    "camera_fit": "not tested",
+    "charging": "not tested",
+    "cabin_heat": "not tested"
+  }
+}

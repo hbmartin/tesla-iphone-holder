@@ -1,0 +1,13 @@
+COMPUTATIONAL VALIDATION: PASS — V3 PROTOTYPE
+Measured nub base offsets: L 88.9 mm, R 19.05 mm. Physical fit remains untested.
+
+11 meshes: each one watertight solid, consistent winding, CAD/STL volume difference below 0.1%.
+Native Bambu projects were read and sliced using their embedded settings.
+No repair/slicing warnings or support toolpaths. No V3 printer job was sent.
+Raised label extrusion is present on all nine fit gauges.
+
+Holder_V3_A1_PLA_PROTOTYPE.3mf: 2 objects, 27 layers, 78.0 minutes, 31.35 g PLA.
+Fit_tests_V3_A1_PLA.3mf: 9 objects, 30 layers, 95.5 minutes, 45.47 g PLA.
+
+Physical fit, camera engagement, charging, and cabin heat remain untested.
+Textured PEI Plate is the project default; select your installed plate before printing.
