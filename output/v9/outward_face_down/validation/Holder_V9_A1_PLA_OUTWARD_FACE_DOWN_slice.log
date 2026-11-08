@@ -1,0 +1,4 @@
+[2026-11-05 09:25:57.291429] [0x0000000202ba2300] [warning] [BambuStudio.cpp:1845 run] cli mode, Current BambuStudio Version 02.09.01.70
+[2026-11-05 09:25:57.404354] [0x0000000202ba2300] [warning] [BambuStudio.cpp:3155 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab A1 0.4 nozzle.json 
+[2026-11-05 09:25:57.404387] [0x0000000202ba2300] [warning] [BambuStudio.cpp:3177 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/Tesla holder V9 PROTOTYPE - A1 0.20mm - outward face down.json 
+[2026-11-05 09:25:57.405283] [0x0000000202ba2300] [warning] [MultiNozzleUtils.cpp:217 load_nozzle_infos_with_compatibility] building nozzle list from filament map and volume types

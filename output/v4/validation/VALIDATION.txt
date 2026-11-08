@@ -1,0 +1,7 @@
+V4 COMPUTATIONAL GEOMETRY AND SLICE: PASS
+Two watertight inserts, finished upper nub widths 5.60 mm, 4.4 mm maximum Z.
+Phone seating recess and camera opening dimensions verified from exported geometry.
+V3 output checksums unchanged.
+A1 PLA: 72.1 minutes, 22.1 grams, 22 layers.
+Supports enabled and present. Remove them before testing.
+PHYSICAL FIT UNTESTED. LENS INTERFERENCE PREDICTED; CLEARANCE IS NOT CERTIFIED.

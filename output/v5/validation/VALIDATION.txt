@@ -1,0 +1,9 @@
+V5 COMPUTATIONAL GEOMETRY AND SLICE: PASS
+Two watertight inserts, finished upper nub widths 5.60 mm, 4.4 mm maximum Z.
+Underside nub widths 13.50 mm; left edge inward 2 mm; left end transitions rounded.
+Provisional left lower outline R15 and console-facing edge R0.9 verified.
+Phone seating recess and camera opening dimensions verified from exported geometry.
+V4 output checksums unchanged.
+A1 PLA: 63.4 minutes, 21.2 grams, 22 layers.
+Supports enabled and present. Remove them before testing.
+PHYSICAL FIT UNTESTED. LENS INTERFERENCE PREDICTED; CLEARANCE IS NOT CERTIFIED.

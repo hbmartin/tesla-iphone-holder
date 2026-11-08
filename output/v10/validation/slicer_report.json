@@ -1,0 +1,27 @@
+[
+  {
+    "project": "Holder_V10_A1_PLA_OUTWARD_FACE_DOWN.3mf",
+    "gcode": "slicer/Holder_V10_A1_PLA_OUTWARD_FACE_DOWN/plate_1.gcode",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "holder_single_PROTOTYPE",
+        "bounds_mm": [
+          [
+            25.0,
+            25.0,
+            0.0
+          ],
+          [
+            154.6504,
+            191.315,
+            4.3991
+          ]
+        ],
+        "print_orientation": "Outward/phone-facing taper plane down, laid flat on the plate"
+      }
+    ],
+    "log": "validation/Holder_V10_A1_PLA_OUTWARD_FACE_DOWN_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  }
+]

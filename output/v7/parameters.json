@@ -1,0 +1,431 @@
+{
+  "units": "mm",
+  "revision": "prototype-v7",
+  "phone_width": 71.1,
+  "phone_length": 150.0,
+  "phone_depth": 8.8,
+  "phone_center_x": 46.5,
+  "phone_bottom_y": 0.0,
+  "phone_corner_radius": 11.0,
+  "left_nub_x": 0.0,
+  "left_nub_bottom_y": 88.9,
+  "left_nub_width": 17.0,
+  "left_nub_length": 63.5,
+  "right_nub_x": 93.0,
+  "right_nub_bottom_y": 19.05,
+  "right_nub_width": 17.0,
+  "right_nub_length": 134.62,
+  "nub_clearance": 0.5,
+  "camera_width": 64.5,
+  "camera_length": 41.5,
+  "camera_top_offset": 3.5,
+  "camera_center_offset_x": 0.0,
+  "camera_corner_radius": 6.0,
+  "camera_clearance": 0.3,
+  "thickness": 4.4,
+  "edge_chamfer": 0.0,
+  "hex_flat_to_flat": 6.0,
+  "hex_web": 1.6,
+  "solid_border": 2.4,
+  "left_outer_x_min": -15.5,
+  "left_wing_x_max": 25.0,
+  "left_wing_y_min": 0.0,
+  "left_wing_y_max": 118.0,
+  "left_wing_corner_radius": 8.5,
+  "left_nub_collar_border": 6.0,
+  "right_outer_x_min": 74.0,
+  "right_outer_x_max": 108.5,
+  "right_outer_y_min": 0.0,
+  "right_nub_collar_border": 6.0,
+  "right_corner_radius": 9.0,
+  "charging_open_radius": 28.5,
+  "charging_open_offset_x": 0.0,
+  "charging_open_offset_y": 75.0,
+  "fit_clearances": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "_notes": {
+    "datum": "XY follows the sloped console; Y=0 is the inner lower crease; Z=0 is the flat pad. Phone camera end is +Y. Thickness is perpendicular to the pad.",
+    "phone": "User confirmed 71.1 x 150 mm. Body thickness 8.8 mm retained, body+housing 11.7, body+lenses 13.8. Bottom back seats at Z=0; the first 36 mm of the phone footprint is clear of print.",
+    "console": "Both measured nub bases are 17 mm; 93 mm center spacing and historical base Y positions retained. Derived gap between bases is 76 mm.",
+    "nub_openings": "18 mm base / 8.5 mm at absolute Z=4.4 for the selected 0.5 mm per-side clearance. Width does not use local-height fraction.",
+    "camera": "Centered 64.5 x 41.5 housing, Y=105 to146.5 in the phone datum. Aperture 65.1 x42.1 with 0.3 per-side clearance. No extra blending relief or opening-enlarging rim chamfer. Housing R6 remains provisional.",
+    "height": "Shared outer top plane: Z=1 at Y=0 to Z=4.4 at upper assembly edge. Phone-bearing plane passes through the bottom crease and outer plane at Y=150. Outboard lower structural edges stay 1 mm. Hard installed Z limit 4.5 mm.",
+    "wall": "10.3 / 14.7 mm base-edge side gaps; 0.5 mm wall allowance plus the requested 2 mm inset retained. N4 traced corner replaces R15.",
+    "charging": "Retain bottom crease position and central opening. Coil location is not measured; no charging performance claim. Compare the new fit with the bare-phone baseline.",
+    "prototype": "V7 full geometry and isolated fit samples. Numerical dimensions checked; physical console fit untested.",
+    "scan": "Old scan calibrated to 72.1 mm width is supporting evidence only; new user measurements take precedence."
+  },
+  "phone_body_plus_bump": 11.7,
+  "phone_body_plus_lenses": 13.8,
+  "nub_base_gap": 76.0,
+  "coupon_thickness": 2.4,
+  "left_wall_gap_bottom": 10.3,
+  "left_wall_gap_top": 14.7,
+  "left_wall_gaps_from_edge": true,
+  "left_wall_clearance": 0.5,
+  "left_outline_radius": 2.4,
+  "camera_bottom_y": 105.0,
+  "camera_lower_blend_relief": 0.0,
+  "nub_positions_confirmed": true,
+  "maximum_allowed_thickness": 4.5,
+  "lower_edge_thickness": 1.0,
+  "phone_seating_relief_length": 36.0,
+  "phone_seating_clearance": 0.2,
+  "lower_outline_radius": 9.0,
+  "underside_edge_radius": 0.5,
+  "nub_upper_opening_width": 8.5,
+  "nub_legacy_rim_leadin": 0.2,
+  "left_nub_upper_bottom_reduction": 0.0,
+  "left_nub_upper_top_reduction": 0.0,
+  "right_nub_upper_bottom_reduction": 0.0,
+  "right_nub_upper_top_reduction": 0.0,
+  "nub_profile_blend": "absolute-Z elliptical envelope",
+  "allow_unverified_physical_fit": true,
+  "print_orientation": "console-side down",
+  "nub_profile_sections": 44,
+  "nub_lower_opening_width": 18.0,
+  "left_outer_edge_inset": 2.0,
+  "left_lower_outer_corner_radius": null,
+  "left_console_edge_radius": 0.9,
+  "stl_tolerance": 0.005,
+  "stl_angular_tolerance": 0.03,
+  "cad_mass_tolerance": 1e-07,
+  "nub_measured_base_width": 17.0,
+  "nub_measured_upper_width": 7.5,
+  "nub_measured_upper_z": 4.4,
+  "nub_fit_clearance": 0.5,
+  "nub_end_clearance": 0.7,
+  "nub_end_cap_run": 2.5,
+  "left_corner_profile": [
+    [
+      0.0,
+      21.16693
+    ],
+    [
+      1.0,
+      19.442247
+    ],
+    [
+      2.0,
+      17.815729
+    ],
+    [
+      3.0,
+      16.284082
+    ],
+    [
+      4.0,
+      14.844063
+    ],
+    [
+      5.0,
+      13.492472
+    ],
+    [
+      6.0,
+      12.226156
+    ],
+    [
+      7.0,
+      11.042008
+    ],
+    [
+      8.0,
+      9.936967
+    ],
+    [
+      9.0,
+      8.90802
+    ],
+    [
+      10.0,
+      7.952197
+    ],
+    [
+      11.0,
+      7.066576
+    ],
+    [
+      12.0,
+      6.248283
+    ],
+    [
+      13.0,
+      5.494485
+    ],
+    [
+      14.0,
+      4.8024
+    ],
+    [
+      15.0,
+      4.169291
+    ],
+    [
+      16.0,
+      3.592465
+    ],
+    [
+      17.0,
+      3.069278
+    ],
+    [
+      18.0,
+      2.597131
+    ],
+    [
+      19.0,
+      2.17347
+    ],
+    [
+      20.0,
+      1.795788
+    ],
+    [
+      21.0,
+      1.461626
+    ],
+    [
+      22.0,
+      1.168568
+    ],
+    [
+      23.0,
+      0.914247
+    ],
+    [
+      24.0,
+      0.696339
+    ],
+    [
+      25.0,
+      0.51257
+    ],
+    [
+      26.0,
+      0.360709
+    ],
+    [
+      27.0,
+      0.238573
+    ],
+    [
+      28.0,
+      0.144023
+    ],
+    [
+      29.0,
+      0.074969
+    ],
+    [
+      30.0,
+      0.029366
+    ],
+    [
+      31.75,
+      0.0
+    ]
+  ],
+  "left_corner_raw_profile": [
+    [
+      0.0,
+      21.16693
+    ],
+    [
+      1.0,
+      18.96062
+    ],
+    [
+      2.0,
+      18.17524
+    ],
+    [
+      3.0,
+      16.00625
+    ],
+    [
+      4.0,
+      14.86799
+    ],
+    [
+      5.0,
+      13.9146
+    ],
+    [
+      6.0,
+      12.1198
+    ],
+    [
+      7.0,
+      11.09092
+    ],
+    [
+      8.0,
+      9.19089
+    ],
+    [
+      9.0,
+      8.05328
+    ],
+    [
+      10.0,
+      7.89668
+    ],
+    [
+      11.0,
+      7.6397
+    ],
+    [
+      12.0,
+      6.65998
+    ],
+    [
+      13.0,
+      5.98536
+    ],
+    [
+      14.0,
+      5.00245
+    ],
+    [
+      15.0,
+      4.19591
+    ],
+    [
+      16.0,
+      3.68912
+    ],
+    [
+      17.0,
+      3.36535
+    ],
+    [
+      18.0,
+      2.59469
+    ],
+    [
+      19.0,
+      2.22609
+    ],
+    [
+      20.0,
+      1.95077
+    ],
+    [
+      21.0,
+      1.0897
+    ],
+    [
+      22.0,
+      0.77849
+    ],
+    [
+      23.0,
+      0.53588
+    ],
+    [
+      24.0,
+      0.43838
+    ],
+    [
+      25.0,
+      0.36985
+    ],
+    [
+      26.0,
+      0.22507
+    ],
+    [
+      27.0,
+      0.10638
+    ],
+    [
+      28.0,
+      0.0
+    ],
+    [
+      29.0,
+      0.0
+    ],
+    [
+      30.0,
+      0.0
+    ],
+    [
+      31.75,
+      0.0
+    ]
+  ],
+  "left_corner_curve": {
+    "run_mm": 31.75,
+    "inward_extent_mm": 21.16693,
+    "powers": [
+      2,
+      3,
+      4
+    ],
+    "weights": [
+      0.4300520191996867,
+      0.4776191672979166,
+      0.09232881350239665
+    ],
+    "rms_residual_to_trace_mm": 0.3263564949992633,
+    "max_residual_to_trace_mm": 0.8547396348968377
+  },
+  "left_corner_join_radius": 0.45,
+  "left_wall_underside_setback": 3.0,
+  "left_wall_transition_height": 0.9,
+  "front_underside_setback": 1.5,
+  "front_transition_height": 0.5,
+  "v7_evidence": {
+    "source": "output/new-curve-review/measurements.json",
+    "source_sha256": "07f1b9a1e627e5605a2de1726a983daadc1c14b17c1872afa48ea69e5e11de5b",
+    "direct_dimensions": {
+      "nub_base_width": 17.0,
+      "nub_width_at_z_4_4": 7.5,
+      "left_nub_to_wall_lower_gap": 10.3,
+      "left_nub_to_wall_upper_gap": 14.7
+    },
+    "gap_reference": "Wide nub base edge to inside wall, sideways; confirmed by user.",
+    "height_reference": "User confirmed 7.5 mm at about 4.4 mm above the flat pad, not the crown.",
+    "nub_center_pitch": {
+      "mm": 93.0,
+      "status": "Retained established position; new photos supply no replacement measured pitch."
+    },
+    "nub_end_positions": "Retain established base footprints. Unregistered axial photos do not justify exact new end reductions.",
+    "nub_intermediate_shape": "Elliptical transverse envelope through the two measured width/height anchors. Wider than a straight interpolation; intermediate widths are unmeasured.",
+    "nub_end_shape": "Rounded elliptic caps with 2.5 mm axial run; full base length plus 0.7 mm end allowance through all heights. Deliberate axial relief replaces 2/2 and 6/5 mm reductions.",
+    "corner_plan": {
+      "pair": "N4 / IMG_0188 + IMG_0189",
+      "run_mm": 31.75,
+      "inward_offset_mm": 21.16693,
+      "scale": "Approximate molded-gauge ruler scale, not calibrated 3D metrology.",
+      "registration": "Lowest captured corner point aligned to lower crease Y=0; straight portion follows the new side-gap reference line. Exact physical alignment remains provisional.",
+      "processing": "Baseline removal and pin-noise filtering, followed by a smooth convex polynomial fit. Run and endpoint offset retained; no rescaling to R15.",
+      "fit_rms_residual_mm": 0.3263564949992633,
+      "fit_max_residual_mm": 0.8547396348968377,
+      "residual_note": "Fit residual is relative to the photographed pin silhouette, not a physical accuracy bound."
+    },
+    "other_pairs": {
+      "N1": "Confirms separate nub flank features; direct dimensions control width.",
+      "N2": "Independent long/right axial evidence, full pad baseline absent: no exact end recession inferred.",
+      "N3": "Independent short/left axial evidence, no marked Y/Z datum: no profile borrowed for right nub.",
+      "N5": "Second corner section contains a border step and uncertain section plane; retained as evidence, not converted into a false 3D surface.",
+      "N6": "10.3 mm lower side gap; direct dimension applied.",
+      "N7": "14.7 mm upper side gap; direct dimension applied."
+    },
+    "underside": "Retain bounded 3 mm wall / 1.5 mm front relief with rounded progression. Combined with new plan contour; not an exact measured underside.",
+    "test_sequence": "Nub clearance collars and independent corner sample before a complete fit test. No printer dispatch."
+  },
+  "left_nub_y": 120.65,
+  "left_outer_y_max": 158.9,
+  "right_nub_y": 86.36,
+  "right_outer_y_max": 160.17000000000002,
+  "taper_upper_y": 160.17000000000002,
+  "outer_top_slope": 0.02122744583879628,
+  "phone_support_top_height": 4.184116875819441,
+  "phone_support_slope": 0.02789411250546294
+}

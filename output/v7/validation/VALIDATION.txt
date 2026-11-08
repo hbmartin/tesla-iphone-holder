@@ -1,0 +1,31 @@
+V7 COMPUTATIONAL GEOMETRY AND SLICING: PASS
+PHYSICAL FIT: UNTESTED
+
+9 valid CAD solids and 9 single watertight meshes.
+50 exported absolute-height width checks passed.
+18.0 mm underside / 8.5 mm at Z=4.4 reference; 0.5 mm clearance each side.
+10.3 / 14.7 mm base-edge wall-gap references applied.
+Smoothed N4 corner replaces R15; corner origin and underside remain provisional.
+Phone seating keepout, camera aperture, shared taper, <4.5 mm thickness and no overlap verified.
+Six clearance collars plus actual lower-left corner sample supplied.
+V4/V5/V6 outputs and 14 source photographs preserved.
+
+Holder_V7_A1_PLA_PROTOTYPE.3mf: 2 objects; 22 model layers / 32 Z events; 50.51 min; 17.08 g; no slicing warnings.
+Fit_tests_V7_A1_PLA.3mf: 7 objects; 22 model layers / 32 Z events; 56.91 min; 21.59 g; no slicing warnings.
+
+Editable 3MF projects contain geometry/settings; actual CLI G-code is supplied separately.
+No printer dispatch. Existing lens-interference diagnostic retained.
+
+GUI PRINT PREPARATION — 4 NOVEMBER 2026
+PASS: both native projects opened and sliced in Bambu Studio 2.8.2.61.
+Saved editable _SLICED.3mf and exported .gcode.3mf for both plates.
+Full inserts: 2 objects, 50m30s, 17.08 g PLA.
+Fit samples: 7 objects, 56m55s, 21.59 g PLA.
+All nine saved meshes match source STL vertices within 0.0001 mm; no repairs.
+A1/0.4/PLA/0.20 mm/3 walls/20% gyroid/buildplate snug supports verified.
+G-code checksums, 22 model layers, supports, model path coverage, and thin
+lower-edge extrusion verified in GUI exports. Per-layer support bounds
+match CLI within 0.01 mm; support infill traversal may differ.
+Only GUI notice: traditional timelapse compatibility. Leave timelapse OFF.
+Detailed results: gui_ready_verification.json.
+No printer dispatch. Physical fit and lens clearance remain unverified.

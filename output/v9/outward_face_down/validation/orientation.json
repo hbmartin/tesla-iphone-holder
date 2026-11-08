@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "orientation": "Outward/phone-facing taper plane down, laid flat on the plate",
+  "rotation_x_degrees": 178.82854089960517,
+  "source_geometry_unchanged": true,
+  "parts": [
+    {
+      "part": "left",
+      "source": "output/v9/left_insert_PROTOTYPE.stl",
+      "source_sha256": "92f9518a33a267bcf7203eaec0e91deb49da9729fed9402eb44134b7acbe5517",
+      "print_mesh": "left_insert_PROTOTYPE.stl",
+      "print_mesh_sha256": "6d257fa141d3157e520d16c2297e658c167da4323ae45518645108d39d5e8c89",
+      "rigid_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          21.150394439697266
+        ],
+        [
+          0.0,
+          -0.9997909915370727,
+          -0.02044439388480216,
+          165.05493799811566
+        ],
+        [
+          0.0,
+          0.02044439388480216,
+          -0.9997909915370727,
+          0.9997913530111492
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "outward_plane_normal_after_rotation": [
+        0.0,
+        -4.85722573273506e-17,
+        -1.0
+      ],
+      "bed_contact_area_mm2": 3262.9422885285876,
+      "bed_contact_y_span_mm": 163.626708984375,
+      "print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          46.150394439697266,
+          163.62933349609375,
+          4.373116493225098
+        ]
+      ],
+      "volume_change_percent": 2.0569837805869896e-06
+    },
+    {
+      "part": "right",
+      "source": "output/v9/right_insert_PROTOTYPE.stl",
+      "source_sha256": "a013af393d92e60c4923f36ee09d774c5410015bf7dc8b5908063d7fca1ca214",
+      "print_mesh": "right_insert_PROTOTYPE.stl",
+      "print_mesh_sha256": "b706ec926964550f95b470584d3977055e0f4d1dde15f03b26bc2e0351d328b8",
+      "rigid_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -74.0
+        ],
+        [
+          0.0,
+          -0.9997909915370727,
+          -0.02044439388480216,
+          166.32520776947987
+        ],
+        [
+          0.0,
+          0.02044439388480216,
+          -0.9997909915370727,
+          0.9997913696985389
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "outward_plane_normal_after_rotation": [
+        0.0,
+        -4.85722573273506e-17,
+        -1.0
+      ],
+      "bed_contact_area_mm2": 3058.270991597823,
+      "bed_contact_y_span_mm": 166.3047637939453,
+      "print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          34.5,
+          166.3149871826172,
+          4.399080753326416
+        ]
+      ],
+      "volume_change_percent": 2.973905502911509e-07
+    }
+  ],
+  "printer_dispatch": false
+}

@@ -267,7 +267,9 @@ def validate_and_export(solid,path,kind,info=None,p=None):
     shape = solid.val()
     if len(solid.solids().vals()) != 1 or not shape.isValid():
         raise ValueError(f"{path.name}: CAD is not one valid solid")
-    cq.exporters.export(solid,str(path),tolerance=0.025,angularTolerance=0.08)
+    export_settings=p or {}
+    cq.exporters.export(solid,str(path),tolerance=export_settings.get('stl_tolerance',0.025),
+                        angularTolerance=export_settings.get('stl_angular_tolerance',0.08))
     mesh = trimesh.load_mesh(path,process=True)
     components = mesh.split(only_watertight=False)
     if not mesh.is_watertight or not mesh.is_winding_consistent or len(components)!=1 or mesh.volume<=0:
@@ -277,7 +279,7 @@ def validate_and_export(solid,path,kind,info=None,p=None):
             "mesh_winding_consistent":bool(mesh.is_winding_consistent),
             "mesh_components":len(components),"triangles":len(mesh.faces),
             "bounds_mm":mesh.bounds.round(4).tolist(),"size_mm":mesh.extents.round(4).tolist(),
-            "volume_mm3":round(float(mesh.volume),3),"cad_volume_mm3":round(shape.Volume(),3)}
+            "volume_mm3":round(float(mesh.volume),3),"cad_volume_mm3":round(shape.Volume(export_settings.get('cad_mass_tolerance')),3)}
     if info:
         holes=info["holes"]
         result["hexagonal_openings"]=len(holes)
@@ -293,6 +295,21 @@ def validate_and_export(solid,path,kind,info=None,p=None):
 
 
 def build(p,out):
+    if p.get('revision')=='prototype-v10':
+        from model_v10 import build as build_v10
+        return build_v10(p,out)
+    if p.get('revision')=='prototype-v9':
+        from model_v9 import build as build_v9
+        return build_v9(p,out)
+    if p.get('revision')=='prototype-v8':
+        from model_v8 import build as build_v8
+        return build_v8(p,out)
+    if p.get('revision')=='prototype-v7':
+        from model_v7 import build as build_v7
+        return build_v7(p,out)
+    if p.get("revision") in ("prototype-v4","prototype-v5","prototype-v6"):
+        from model_v4 import build_v4
+        return build_v4(p, out)
     p=dict(p)
     # Bottom distances are the user's direct measurements; derive centers once
     # so slots, wall contact and previews all share the same lower-ledge datum.
@@ -370,7 +387,7 @@ def build(p,out):
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--parameters",type=Path,default=ROOT/"parameters.json")
-    ap.add_argument("--output",type=Path,default=ROOT/"output/v3")
+    ap.add_argument("--output",type=Path,default=ROOT/"output/v10")
     args=ap.parse_args()
     p=json.loads(args.parameters.read_text())
     for key in ["thickness","hex_flat_to_flat","hex_web","solid_border"]:

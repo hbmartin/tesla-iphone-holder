@@ -1,0 +1,43 @@
+[
+  {
+    "project": "Holder_V6_A1_PLA_PROTOTYPE.3mf",
+    "gcode": "slicer/Holder_V6_A1_PLA_PROTOTYPE/plate_1.gcode",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "left_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            25.0,
+            25.0,
+            0.0
+          ],
+          [
+            70.8154,
+            183.9,
+            4.373
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "right_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            80.8154,
+            25.0,
+            0.0
+          ],
+          [
+            115.3154,
+            185.17,
+            4.4
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      }
+    ],
+    "log": "validation/Holder_V6_A1_PLA_PROTOTYPE_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  }
+]

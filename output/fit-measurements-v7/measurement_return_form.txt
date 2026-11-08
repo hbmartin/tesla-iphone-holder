@@ -1,0 +1,83 @@
+V7 FIT MEASUREMENTS - ALL DIMENSIONS IN MILLIMETERS
+Companion: output/pdf/v7_fit_measurement_sheet.pdf
+
+REFERENCE DIRECTIONS
+Y=0: inside factory lower crease, extended through the rounded corner.
++Y: along the pad toward the camera end.
+X=0: short left nub centerline; +X toward the right nub.
+Z=0: adjacent flat pad; +Z perpendicular to the pad.
+Label actual stations; do not substitute the old CAD coordinates.
+
+1. PRINTED V6 PARTS (REMOVE LOOSE SUPPORTS; DO NOT SAND FIRST)
+Use light caliper contact with tips at the mouth plane.
+Widths: about 10 mm inside each finished end, plus the midpoint.
+
+Left phone-facing mouth: lower width ___ middle ___ upper ___ length ___
+Left console-facing mouth: lower width ___ middle ___ upper ___ length ___
+Right phone-facing mouth: lower width ___ middle ___ upper ___ length ___
+Right console-facing mouth: lower width ___ middle ___ upper ___ length ___
+Different width stations, if needed: ___
+Left first contact (side / lower end / upper end / console corner): ___
+Right first contact: ___
+Rough support residue or visible distortion: ___
+Left lower-left corner gap, resting without pressure: ___
+Left far-end gap, resting without pressure: ___
+Other rocking/contact notes: ___
+Photo names showing caliper contact/readout and installed fit: ___
+
+2. REAL NUB POSITIONS AND LENGTHS
+Left lower footprint end Y ___ upper footprint end Y ___ total length ___
+Right lower footprint end Y ___ upper footprint end Y ___ total length ___
+Center-to-center distance ___ at common Y ___ and contact height Z ___
+If fabric blending makes an end/base boundary unclear, describe it: ___
+
+3. REAL NUB CROSS-SECTIONS
+Capture both flanks, crown and adjacent flat-pad baseline in each trace.
+L1/R1: 10 mm above that nub's actual lower end.
+L2/R2: actual nub midpoint.
+L3/R3: 10 mm below that nub's actual upper end.
+Height/base width are independent checks only where accessible.
+
+L1 actual Y ___ max height ___ base width ___ photo/trace files ___
+L2 actual Y ___ max height ___ base width ___ photo/trace files ___
+L3 actual Y ___ max height ___ base width ___ photo/trace files ___
+R1 actual Y ___ max height ___ base width ___ photo/trace files ___
+R2 actual Y ___ max height ___ base width ___ photo/trace files ___
+R3 actual Y ___ max height ___ base width ___ photo/trace files ___
+Independent caliper/depth-check reference plane and contact height: ___
+
+4. REAL NUB LENGTH PROFILES
+LL: full short-left-nub centerline trace; known Y mark ___; files ___
+RL: full right-nub centerline trace; known Y mark ___; files ___
+For split profiles: overlap >=25 mm; known Y mark on EVERY segment.
+Segment IDs, marks and overlap: ___
+Overhead bare-nub/end photos with ruler close to pad: ___
+
+5. LOWER-LEFT CORNER
+C1: across wall-to-pad blend at Y=10; actual Y ___; files ___
+C2: across wall-to-pad blend at Y=30; actual Y ___; files ___
+C3: along pad at X=-5; actual X ___; files ___
+Each upright trace needs flat-pad baseline, direction and placement photo.
+Use an accessible nearby station if necessary; record its actual position.
+
+CP0: flat paper/card outline, trimmed to the corner without bending.
+Material thickness ___ visible gaps ___ files ___
+CP1 OPTIONAL: same outline at measured total contact height Z=1.0.
+Actual height ___ support arrangement ___ files ___ / unavailable ___
+Mark Y=0, X=0 (or a measured offset) and +Y on each template.
+Include a photo in place and a photo flat against the grid.
+
+6. TRACE QUALITY
+Horizontal 100 mm grid bar: previously verified at 100 mm.
+Measured vertical 100 mm grid span: ___
+Gauge pin pitch ___ contact-tip thickness ___ / unknown ___
+Repeat each gauge capture twice; record largest difference per profile:
+L1 ___ L2 ___ L3 ___ R1 ___ R2 ___ R3 ___ LL ___ RL ___
+C1 ___ C2 ___ C3 ___
+Third captures needed, and reason: ___
+
+Trace the locked contact-tip edge onto FLAT grid paper with a fine pencil.
+Mark ID, actual station, Z=0, direction and a known positional mark.
+Photograph the flat tracing straight down; include a separate placement photo.
+Keep pressure light. Mark inaccessible measurements as unavailable.
+The supplied PDF explains every diagram and measurement.

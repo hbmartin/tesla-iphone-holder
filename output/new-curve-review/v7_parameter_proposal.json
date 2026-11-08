@@ -1,0 +1,62 @@
+{
+  "revision": "v7-measurement-proposal",
+  "status": "Upper-width height confirmed; inputs ready for V7 geometry",
+  "authoritative_dimensions": {
+    "nub_base_width": 17.0,
+    "nub_upper_contact_width": 7.5,
+    "upper_width_height_above_pad": 4.4,
+    "left_wall_gap_lower": 10.3,
+    "left_wall_gap_upper": 14.7
+  },
+  "width_shortfall_mm": {
+    "base_total": 3.5,
+    "base_per_side": 1.75,
+    "upper_total": 1.9,
+    "upper_per_side": 0.95
+  },
+  "candidate_per_side_clearances_mm": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "candidate_opening_widths_mm": [
+    {
+      "clearance_each_side": 0.3,
+      "base": 17.6,
+      "upper_at_measured_height": 8.1
+    },
+    {
+      "clearance_each_side": 0.5,
+      "base": 18.0,
+      "upper_at_measured_height": 8.5
+    },
+    {
+      "clearance_each_side": 0.7,
+      "base": 18.4,
+      "upper_at_measured_height": 8.9
+    }
+  ],
+  "wall_location_if_symmetric_base_center_x_is_zero": {
+    "lower_station_x": -18.8,
+    "upper_station_x": -23.2,
+    "assumptions": "17 mm symmetric base; direct gaps measured from its leftmost base flank. These are two local wall locations, not a line to extrapolate through the lower corner."
+  },
+  "retained_constraints": {
+    "phone_width": 71.1,
+    "phone_height": 150,
+    "camera_width": 64.5,
+    "camera_height": 41.5,
+    "camera_lower_y": 105,
+    "nominal_max_thickness": 4.4,
+    "hard_max_thickness": 4.5,
+    "phone_bottom_at_crease": true
+  },
+  "implementation_rules": [
+    "Use opening width as a function of actual pad-normal Z, not fraction of the local part thickness.",
+    "Add tested physical clearance to the measured nub; do not reuse 5.6 / 13.5 finished widths.",
+    "Keep left/right axial evidence separate; do not copy one nub end profile onto the other.",
+    "Keep wall side gaps separate from nub-end Y coordinates and from lower-corner curvature.",
+    "Use the corner plan capture independently from the upright/oblique transition capture.",
+    "Validate localized fit samples before another full holder; do not dispatch a print automatically."
+  ]
+}

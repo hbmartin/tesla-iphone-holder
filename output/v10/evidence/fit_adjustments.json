@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-05",
+  "additional_left_shift_mm": 0.5,
+  "baseline": "output/v9/parameters.json",
+  "baseline_sha256": "27048bdef2469f8a3e976ad996dae7523197ed63855620238eece9f1c75a24ac",
+  "photos": {
+    "IMG_0204.jpeg": "340ad53e2cfcc21f4515fd96e1b53bf7de998361d8ceb5de895f5a4021fcd481",
+    "IMG_0203.jpeg": "974cae29855122597ce6d8c4f87df66d19b70282fd452c1ddf9821f4254cecac"
+  },
+  "basis": "User requests further left opening shift and upper bridge in red-marked location; dimensions remain fit-test assumptions."
+}

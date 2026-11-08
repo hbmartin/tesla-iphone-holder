@@ -1,0 +1,609 @@
+{
+  "computational_geometry_status": "PASS",
+  "physical_fit_status": "UNTESTED",
+  "mesh_checks": [
+    {
+      "file": "left_insert_PROTOTYPE.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.373041152954102,
+      "cad_stl_volume_difference_percent": 0.0003927501843127856,
+      "sha256": "8643056839c5e89334379567366b91610f4a801815194383f368fdbcc666430b"
+    },
+    {
+      "file": "right_insert_PROTOTYPE.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.400000095367432,
+      "cad_stl_volume_difference_percent": 0.00023062591979866603,
+      "sha256": "520d45e97a5045215e910ef64c48f76ec7019e1ee592f85e52fa13c310efbfe2"
+    },
+    {
+      "file": "fit_tests/left_nub_clearance_03.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.313604354858398,
+      "cad_stl_volume_difference_percent": 0.0006058511482512335,
+      "sha256": "b476ac40ecb2405f62033af2a7f5897ac40a76bfd5ca60395be87ff620bdb7ec"
+    },
+    {
+      "file": "fit_tests/left_nub_clearance_05.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.313604354858398,
+      "cad_stl_volume_difference_percent": 0.0006047250300607196,
+      "sha256": "6019681b08a939ccaf6474b072967cf18502c44b2bcc150a57fc373ebab9aa1a"
+    },
+    {
+      "file": "fit_tests/left_nub_clearance_07.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.313604354858398,
+      "cad_stl_volume_difference_percent": 0.0007029829644345853,
+      "sha256": "d824f42ac9896564818f2b601623a7fec866ad8c2b42322fbe33b003cec68e8e"
+    },
+    {
+      "file": "fit_tests/lower_left_corner_C7.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 1.8490978479385376,
+      "cad_stl_volume_difference_percent": 0.001715047615556029,
+      "sha256": "16a324066b244e968fd8e72beed5d8db5fbbc60a4a5a58af7fd64541e738aa8a"
+    },
+    {
+      "file": "fit_tests/right_nub_clearance_03.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.3405632972717285,
+      "cad_stl_volume_difference_percent": 0.0003944713623085093,
+      "sha256": "721aa2e51e532f4d5fcbf7c6ac3e82c270daa3901934d09566129118e8cfe8b5"
+    },
+    {
+      "file": "fit_tests/right_nub_clearance_05.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.3405632972717285,
+      "cad_stl_volume_difference_percent": 0.00031245156975271755,
+      "sha256": "000634ca0506e304317024cf66098567140ec891ed766c4e8df879e49b1537e5"
+    },
+    {
+      "file": "fit_tests/right_nub_clearance_07.stl",
+      "cad_valid_single_solid": true,
+      "watertight_single_component": true,
+      "max_z_mm": 4.3405632972717285,
+      "cad_stl_volume_difference_percent": 0.0003010715574487784,
+      "sha256": "989a10880a7d8dbf5936129c4eaf7254ff888b34fdf608a20501b658148d1d08"
+    }
+  ],
+  "absolute_height_width_sections": [
+    {
+      "part": "left",
+      "y_mm": 100,
+      "z_mm": 0.001,
+      "actual_width_mm": 17.999964637756875,
+      "expected_width_mm": 17.999999646405563,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 0.001,
+      "actual_width_mm": 17.999964637756875,
+      "expected_width_mm": 17.999999646405563,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 0.001,
+      "actual_width_mm": 17.999964637756875,
+      "expected_width_mm": 17.999999646405563,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 100,
+      "z_mm": 0.5,
+      "actual_width_mm": 17.9113712310791,
+      "expected_width_mm": 17.911370355889247,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 0.5,
+      "actual_width_mm": 17.9113712310791,
+      "expected_width_mm": 17.911370355889247,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 0.5,
+      "actual_width_mm": 17.9113712310791,
+      "expected_width_mm": 17.911370355889247,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 100,
+      "z_mm": 1.0,
+      "actual_width_mm": 17.642650604248047,
+      "expected_width_mm": 17.64264970658814,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 1.0,
+      "actual_width_mm": 17.642650604248047,
+      "expected_width_mm": 17.64264970658814,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 1.0,
+      "actual_width_mm": 17.642650604248047,
+      "expected_width_mm": 17.64264970658814,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 100,
+      "z_mm": 1.5,
+      "actual_width_mm": 17.18486976623535,
+      "expected_width_mm": 17.184870275243057,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 1.5,
+      "actual_width_mm": 17.18486976623535,
+      "expected_width_mm": 17.184870275243057,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 1.5,
+      "actual_width_mm": 17.18486976623535,
+      "expected_width_mm": 17.184870275243057,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 100,
+      "z_mm": 2.0,
+      "actual_width_mm": 16.521312713623047,
+      "expected_width_mm": 16.521312992939528,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 2.0,
+      "actual_width_mm": 16.521312713623047,
+      "expected_width_mm": 16.521312992939528,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 2.0,
+      "actual_width_mm": 16.521312713623047,
+      "expected_width_mm": 16.521312992939528,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 100,
+      "z_mm": 2.5,
+      "actual_width_mm": 15.623992919921875,
+      "expected_width_mm": 15.623993396170544,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 2.5,
+      "actual_width_mm": 15.623992919921875,
+      "expected_width_mm": 15.623993396170544,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 2.5,
+      "actual_width_mm": 15.623992919921875,
+      "expected_width_mm": 15.623993396170544,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 100,
+      "z_mm": 3.0,
+      "actual_width_mm": 14.446192741394043,
+      "expected_width_mm": 14.446192892628943,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 3.0,
+      "actual_width_mm": 14.446192741394043,
+      "expected_width_mm": 14.446192892628943,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 3.0,
+      "actual_width_mm": 14.446192741394043,
+      "expected_width_mm": 14.446192892628943,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 120,
+      "z_mm": 3.5,
+      "actual_width_mm": 12.904953956604004,
+      "expected_width_mm": 12.904953523152864,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "left",
+      "y_mm": 140,
+      "z_mm": 3.5,
+      "actual_width_mm": 12.904953956604004,
+      "expected_width_mm": 12.904953523152864,
+      "center_x_mm": 0.0
+    },
+    {
+      "part": "right",
+      "y_mm": 40,
+      "z_mm": 0.001,
+      "actual_width_mm": 17.99996459960991,
+      "expected_width_mm": 17.999999646405563,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 80,
+      "z_mm": 0.001,
+      "actual_width_mm": 17.99996459960991,
+      "expected_width_mm": 17.999999646405563,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 0.001,
+      "actual_width_mm": 17.99996459960991,
+      "expected_width_mm": 17.999999646405563,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 0.001,
+      "actual_width_mm": 17.99996459960991,
+      "expected_width_mm": 17.999999646405563,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 40,
+      "z_mm": 0.5,
+      "actual_width_mm": 17.911376953125,
+      "expected_width_mm": 17.911370355889247,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 80,
+      "z_mm": 0.5,
+      "actual_width_mm": 17.911376953125,
+      "expected_width_mm": 17.911370355889247,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 0.5,
+      "actual_width_mm": 17.911376953125,
+      "expected_width_mm": 17.911370355889247,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 0.5,
+      "actual_width_mm": 17.911376953125,
+      "expected_width_mm": 17.911370355889247,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 40,
+      "z_mm": 1.0,
+      "actual_width_mm": 17.642654418945312,
+      "expected_width_mm": 17.64264970658814,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 80,
+      "z_mm": 1.0,
+      "actual_width_mm": 17.642654418945312,
+      "expected_width_mm": 17.64264970658814,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 1.0,
+      "actual_width_mm": 17.642654418945312,
+      "expected_width_mm": 17.64264970658814,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 1.0,
+      "actual_width_mm": 17.642654418945312,
+      "expected_width_mm": 17.64264970658814,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 40,
+      "z_mm": 1.5,
+      "actual_width_mm": 17.18487548828125,
+      "expected_width_mm": 17.184870275243057,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 80,
+      "z_mm": 1.5,
+      "actual_width_mm": 17.18487548828125,
+      "expected_width_mm": 17.184870275243057,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 1.5,
+      "actual_width_mm": 17.18487548828125,
+      "expected_width_mm": 17.184870275243057,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 1.5,
+      "actual_width_mm": 17.18487548828125,
+      "expected_width_mm": 17.184870275243057,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 80,
+      "z_mm": 2.0,
+      "actual_width_mm": 16.521316528320312,
+      "expected_width_mm": 16.521312992939528,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 2.0,
+      "actual_width_mm": 16.521316528320312,
+      "expected_width_mm": 16.521312992939528,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 2.0,
+      "actual_width_mm": 16.521316528320312,
+      "expected_width_mm": 16.521312992939528,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 80,
+      "z_mm": 2.5,
+      "actual_width_mm": 15.623992919921875,
+      "expected_width_mm": 15.623993396170544,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 2.5,
+      "actual_width_mm": 15.623992919921875,
+      "expected_width_mm": 15.623993396170544,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 2.5,
+      "actual_width_mm": 15.623992919921875,
+      "expected_width_mm": 15.623993396170544,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 3.0,
+      "actual_width_mm": 14.446197509765625,
+      "expected_width_mm": 14.446192892628943,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 3.0,
+      "actual_width_mm": 14.446197509765625,
+      "expected_width_mm": 14.446192892628943,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 120,
+      "z_mm": 3.5,
+      "actual_width_mm": 12.904953002929688,
+      "expected_width_mm": 12.904953523152864,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 3.5,
+      "actual_width_mm": 12.904953002929688,
+      "expected_width_mm": 12.904953523152864,
+      "center_x_mm": 93.0
+    },
+    {
+      "part": "right",
+      "y_mm": 145,
+      "z_mm": 4.0,
+      "actual_width_mm": 10.830795288085938,
+      "expected_width_mm": 10.830799972493265,
+      "center_x_mm": 93.0
+    }
+  ],
+  "wall_gap_checks": [
+    {
+      "y_mm": 88.9,
+      "measured_gap_mm": 10.3,
+      "actual_outer_edge_x_mm": -16.300000351001973,
+      "expected_outer_edge_x_mm": -16.3
+    },
+    {
+      "y_mm": 152.4,
+      "measured_gap_mm": 14.7,
+      "actual_outer_edge_x_mm": -20.700000571462066,
+      "expected_outer_edge_x_mm": -20.7
+    }
+  ],
+  "corner_changes": [
+    {
+      "y_mm": 2,
+      "new_outer_x_mm": 7.538219897472785,
+      "v6_outer_x_mm": -2.114010592577645,
+      "inward_change_mm": 9.65223049005043
+    },
+    {
+      "y_mm": 5,
+      "new_outer_x_mm": 3.0067693720668203,
+      "v6_outer_x_mm": -5.8131020858473335,
+      "inward_change_mm": 8.819871457914154
+    },
+    {
+      "y_mm": 10,
+      "new_outer_x_mm": -2.8799847384558146,
+      "v6_outer_x_mm": -8.774843337923443,
+      "inward_change_mm": 5.894858599467629
+    },
+    {
+      "y_mm": 15,
+      "new_outer_x_mm": -7.010031418420188,
+      "v6_outer_x_mm": -9.68110261280223,
+      "inward_change_mm": 2.6710711943820415
+    },
+    {
+      "y_mm": 20,
+      "new_outer_x_mm": -9.729944468283522,
+      "v6_outer_x_mm": -10.07480341206142,
+      "inward_change_mm": 0.34485894377789883
+    },
+    {
+      "y_mm": 25,
+      "new_outer_x_mm": -11.359180405246757,
+      "v6_outer_x_mm": -10.468504211320612,
+      "inward_change_mm": -0.8906761939261454
+    },
+    {
+      "y_mm": 30,
+      "new_outer_x_mm": -12.188383868862761,
+      "v6_outer_x_mm": -10.862205010579801,
+      "inward_change_mm": -1.32617885828296
+    }
+  ],
+  "fit_samples": [
+    {
+      "name": "left_nub_clearance_03",
+      "clearance_per_side_mm": 0.3,
+      "base_opening_mm": 17.6,
+      "reference_opening_at_z_4_4_mm": 8.100000000000001
+    },
+    {
+      "name": "left_nub_clearance_05",
+      "clearance_per_side_mm": 0.5,
+      "base_opening_mm": 18.0,
+      "reference_opening_at_z_4_4_mm": 8.5
+    },
+    {
+      "name": "left_nub_clearance_07",
+      "clearance_per_side_mm": 0.7,
+      "base_opening_mm": 18.4,
+      "reference_opening_at_z_4_4_mm": 8.9
+    },
+    {
+      "name": "right_nub_clearance_03",
+      "clearance_per_side_mm": 0.3,
+      "base_opening_mm": 17.6,
+      "reference_opening_at_z_4_4_mm": 8.100000000000001
+    },
+    {
+      "name": "right_nub_clearance_05",
+      "clearance_per_side_mm": 0.5,
+      "base_opening_mm": 18.0,
+      "reference_opening_at_z_4_4_mm": 8.5
+    },
+    {
+      "name": "right_nub_clearance_07",
+      "clearance_per_side_mm": 0.7,
+      "base_opening_mm": 18.4,
+      "reference_opening_at_z_4_4_mm": 8.9
+    }
+  ],
+  "corner_sample_is_subset_of_actual_insert": true,
+  "shared_taper": "1 mm at Y=0 to 4.4 mm at assembly upper edge",
+  "insert_overlap_mm3": 0.0,
+  "phone_seating_keepout_clear": true,
+  "camera_opening_mm": [
+    65.1,
+    42.1
+  ],
+  "source_photos_hash_verified": 14,
+  "preserved_output_files": {
+    "v4": 36,
+    "v5": 32,
+    "v6": 35
+  },
+  "prior_output_files_absent": {
+    "v4": 0,
+    "v5": 0,
+    "v6": 0
+  },
+  "physical_diagnostics": {
+    "phone_back_tilt_degrees": 1.5978005994066036,
+    "housing_projection_mm": 2.8999999999999986,
+    "lens_projection_mm": 5.0,
+    "lens_to_flat_pad_gap_range_mm": [
+      -2.0703129074400515,
+      -0.9131573316083763
+    ],
+    "lens_clearance_status": "PREDICTED_INTERFERENCE",
+    "diagnostic_is_blocking": false,
+    "assumptions": "Rigid phone, ideal flat pad, no fabric compression; exact lens positions unmeasured.",
+    "scan_status": "Historical scan is not a gate: its earlier 72.1 mm width calibration is superseded.",
+    "physical_fit_status": "UNTESTED: provisional console and nub profiles; no clearance certification."
+  }
+}

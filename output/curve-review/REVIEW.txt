@@ -1,0 +1,71 @@
+CONSOLE CONTOUR PHOTO REVIEW
+2026-11-03
+
+18 original photographs matched into 9 pairs. Source images and V5 CAD unchanged.
+All location assignments below are inferred from placement images; numeric stations are unrecorded.
+The raw pixel silhouettes and provisional local coordinates are in profiles.json.
+The local coordinates are NOT registered console coordinates and are NOT validated CAD dimensions.
+No calibrated uncertainty bound is available. Do not treat 3 decimal places in stored samples as physical precision.
+
+SCALE CHECK
+IMG_0170: molded 100 mm ruler span approximately 570 px; paper 100 mm calibration bar approximately 512 px.
+Approximately 11% difference. Raised surfaces, camera pose, paper curvature and/or printing scale can contribute.
+User confirmed the horizontal paper bar measures 100 mm. Vertical print scale not independently confirmed.
+The gauge and paper cannot share one image scale. No CAD parameter edits made.
+
+P1 IMG_0162.jpeg + IMG_0163.jpeg: Lower crease / front transition
+Likely longitudinal section through the lower transition. Exact X station and contact plane are unrecorded.
+Use: Lower console-side relief and phone seating transition; does not alone establish an XY corner radius.
+Limit: The sheet is visibly curved. The curved endpoint reaches the lowest pins, so the complete transition may not be captured.
+
+P2 IMG_0164.jpeg + IMG_0165.jpeg: Left wall to pad
+Crosswise capture of the left wall/pad transition, apparently in the lower region. Exact Y station is unrecorded.
+Use: Left external edge relief. Preserve the requested 2 mm inset until a console datum is registered.
+Limit: A wall blend is visible, but the photo does not establish wall position relative to the nub centerline or the full pad baseline.
+
+P3 IMG_0167.jpeg + IMG_0168.jpeg: Short left nub, lengthwise
+Likely lengthwise section through the short left nub. Its exact lateral alignment and gauge tilt are unrecorded.
+Use: Asymmetric longitudinal end slopes. A vertical section does not specify the rounded XY end outlines at each height.
+Limit: The broad upper feature and end transitions need registration to physical nub endpoints before changing opening length.
+
+P4 IMG_0169.jpeg + IMG_0170.jpeg: Upper crosswise nub section
+Crosswise capture across both nubs near their upper ends. Exact Y station is unrecorded.
+Use: Nub flank shape and separation at this station.
+Limit: The molded 100 mm ruler span is about 570 image pixels; the paper calibration bar is about 512 pixels. Their scales differ by about 11%.
+
+P5 IMG_0171.jpeg + IMG_0172.jpeg: Second crosswise nub section
+Crosswise capture across both nubs. It appears lower than P4; exact Y and whether this was a repeat are unrecorded.
+Use: Compare nub flanks with P4; do not treat the two as repeatability measurements without station confirmation.
+Limit: Both crowns are steeper than P4 in the image. This could reflect station, seating, or tilt as well as true surface variation.
+
+P6 IMG_0173.jpeg + IMG_0174.jpeg: Crosswise section with unequal features
+Crosswise capture at a different height on the pad. The gauge appears reversed in the placement photo relative to the grid photo.
+Use: Local end/side transition evidence. Resolve console left/right before assigning either feature to a nub.
+Limit: The far edge is cropped; the near silhouette is extracted. Do not read image-left as console-left.
+
+P7 IMG_0175.jpeg + IMG_0176.jpeg: Longitudinal lower transition
+Lengthwise/oblique capture near the lower pad and long center nub. Exact X station and which surface the pins follow are uncertain.
+Use: Evidence of longitudinal change approaching the crease; identify the abrupt step before modeling it as a real surface.
+Limit: The abrupt end step may include a boundary or non-contact pins. It is retained in the raw silhouette but not interpreted as CAD.
+
+P8 IMG_0177.jpeg + IMG_0178.jpeg: Lower crosswise wall / nub section
+Crosswise capture in the lower region: a broad left-side feature and a narrow right-side feature. Exact Y station is unrecorded.
+Use: Left boundary blend and long-nub cross-section near its lower region.
+Limit: The left feature reaches the gauge end and is only partially captured; it must not automatically be classified as the short nub.
+
+P9 IMG_0179.jpeg + IMG_0180.jpeg: Lower-left corner, oblique section
+Oblique capture through the lower-left corner. Section angle, contact height, and exact origin are unrecorded.
+Use: Compound corner blend. This is evidence for a smooth transition, not a direct measurement of a plan-view fillet radius.
+Limit: A single diagonal section cannot reconstruct the whole 3D corner or prove the current R15 outline.
+
+REMAINING INFORMATION
+- Horizontal 100 mm paper bar confirmed. A vertical check would rule out anisotropic printing.
+- Actual cross-section distances from the bottom crease, if recorded; otherwise retain approximate stations.
+- A traced line on flat paper removes the raised-gauge parallax from the photograph. Existing photos remain useful.
+- Exact nub/base positions, end-plan outlines and corner plan outline are not established by these sections.
+- No proof of camera/lens clearance or charging performance follows from these captures.
+
+DESIGN TARGETS RETAINED
+2 mm left-edge inset; 13.5 mm underside nub openings; 5.6 mm upper openings; 4.4 mm nominal maximum / 4.5 mm hard limit;
+1 mm lower structural edge; phone seated at crease; 71.1 x 150 mm phone; 65.1 x 42.1 mm camera opening.
+These targets are not new measurements derived from the photographs.

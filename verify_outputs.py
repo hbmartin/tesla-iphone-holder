@@ -169,5 +169,58 @@ def package():
 
 
 if __name__=="__main__":
-    result=verify()
-    print(json.dumps({"status":result["status"],"projects":result["projects"],"package":package()},indent=2))
+    import argparse
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--output",type=Path,default=ROOT/"output/v10")
+    ap.add_argument("--geometry-only",action="store_true")
+    args=ap.parse_args();OUT=args.output.resolve()
+    revision=json.loads((OUT/"validation/geometry_report.json").read_text())["revision"]
+    if revision=='prototype-v10':
+        from verify_v10 import geometry
+        result=geometry(OUT)
+        if not args.geometry_only:
+            from prepare_v10 import validate_slice
+            entries=json.loads((OUT/'validation/slicer_report.json').read_text())
+            result['slicing']=[validate_slice(OUT,e) for e in entries]
+            result['printer_dispatch']=False
+            (OUT/'validation/final_verification.json').write_text(json.dumps(result,indent=2)+'\n')
+    elif revision=='prototype-v9':
+        from verify_v9 import geometry
+        result=geometry(OUT)
+        if not args.geometry_only:
+            from prepare_v9 import validate_slice
+            entries=json.loads((OUT/'validation/slicer_report.json').read_text())
+            result['slicing']=[validate_slice(OUT,e,2,True) for e in entries]
+            result['printer_dispatch']=False
+            (OUT/'validation/final_verification.json').write_text(json.dumps(result,indent=2)+'\n')
+    elif revision=='prototype-v8':
+        from verify_v8 import geometry
+        result=geometry(OUT)
+        if not args.geometry_only:
+            from prepare_v8 import validate_slice
+            entries=json.loads((OUT/'validation/slicer_report.json').read_text())
+            result['slicing']=[validate_slice(OUT,e,2 if i==0 else 3,i==0) for i,e in enumerate(entries)]
+            result['printer_dispatch']=False
+            (OUT/'validation/final_verification.json').write_text(json.dumps(result,indent=2)+'\n')
+    elif revision=='prototype-v7':
+        from verify_v7 import geometry
+        result=geometry(OUT)
+        if not args.geometry_only:
+            from prepare_v7 import validate_slice
+            entries=json.loads((OUT/'validation/slicer_report.json').read_text())
+            result['slicing']=[validate_slice(OUT,e,2 if i==0 else 7,i==0) for i,e in enumerate(entries)]
+            result['printer_dispatch']=False
+            (OUT/'validation/final_verification.json').write_text(json.dumps(result,indent=2)+'\n')
+    elif revision=="prototype-v6":
+        from verify_v6 import verify_v6
+        result=verify_v6(OUT,geometry_only=args.geometry_only)
+        print(json.dumps({'geometry':result['computational_geometry_status'],'parts':2,'slice':result.get('slicing')},indent=2))
+    elif revision=="prototype-v5":
+        from verify_v5 import verify_v5
+        print(json.dumps(verify_v5(OUT,geometry_only=args.geometry_only),indent=2))
+    elif revision=="prototype-v4":
+        from verify_v4 import verify_v4
+        print(json.dumps(verify_v4(OUT,geometry_only=args.geometry_only),indent=2))
+    else:
+        result=verify()
+        print(json.dumps({"status":result["status"],"projects":result["projects"],"package":package()},indent=2))

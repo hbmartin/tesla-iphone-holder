@@ -29,7 +29,7 @@ def resolve(typ,name,stack=()):
     return result
 
 
-def presets(out):
+def presets(out, v4=False):
     machine=resolve("machine","Bambu Lab A1 0.4 nozzle")
     process=resolve("process","0.20mm Standard @BBL A1")
     filament=resolve("filament","Generic PLA @BBL A1")
@@ -40,6 +40,13 @@ def presets(out):
                     "sparse_infill_density":"20%","sparse_infill_pattern":"gyroid",
                     "enable_support":"0","brim_type":"no_brim","brim_width":"0",
                     "print_sequence":"by layer"})
+    if v4:
+        process.update({"name":"Tesla holder V4 PROTOTYPE - A1 0.20mm",
+                        "print_settings_id":"Tesla holder V4 PROTOTYPE - A1 0.20mm",
+                        "enable_support":"1","support_type":"normal(auto)",
+                        "support_style":"snug","support_on_build_plate_only":"1",
+                        "support_top_z_distance":"0.2","support_bottom_z_distance":"0.2",
+                        "support_object_xy_distance":"0.35"})
     machine["printer_settings_id"]="Bambu Lab A1 0.4 nozzle"
     filament["filament_settings_id"]=["Generic PLA @BBL A1"]
     filament["filament_colour"]=["#00AE42"]
@@ -50,7 +57,7 @@ def presets(out):
         (out/f"{name}.json").write_text(json.dumps(data,indent=2)+"\n")
 
 
-def create_geometry_3mf(paths,target,settings=None,margin=25.):
+def create_geometry_3mf(paths,target,settings=None,margin=25.,console_side_down=False):
     """Build a deterministic multi-object print layout, at Z=0, without nesting.
 
     3MF has explicit millimeter units. Separate objects retain useful names.
@@ -77,7 +84,7 @@ def create_geometry_3mf(paths,target,settings=None,margin=25.):
     placements=[]
     for i,path in enumerate(paths,1):
         mesh=trimesh.load_mesh(path,process=True)
-        flip="insert_PROTOTYPE" in path.stem or "nub" in path.stem
+        flip=not console_side_down and ("insert_PROTOTYPE" in path.stem or "nub" in path.stem)
         if flip:
             # Phone-side down: the slot widens upward during printing, so the
             # tapered walls retreat into supported material on successive layers.
@@ -107,7 +114,8 @@ def create_geometry_3mf(paths,target,settings=None,margin=25.):
         ET.SubElement(part,"metadata",key="matrix",value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1")
         ET.SubElement(part,"mesh_stat",edges_fixed="0",degenerate_facets="0",facets_removed="0",facets_reversed="0",backwards_edges="0")
         placements.append({"name":path.stem,"bounds_mm":mesh.bounds.round(4).tolist(),
-                           "print_orientation":"phone face down, tapered slot widens upward" if flip else "label face up"})
+                           "print_orientation":"console side down; supported nub overhangs" if console_side_down else
+                           ("phone face down, tapered slot widens upward" if flip else "label face up")})
         x+=w+10;row_h=max(row_h,h)
     plate=ET.SubElement(config,"plate")
     ET.SubElement(plate,"metadata",key="plater_id",value="1")
@@ -131,7 +139,7 @@ def create_geometry_3mf(paths,target,settings=None,margin=25.):
     return placements
 
 
-def run_project(out,name,paths,margin=25.):
+def run_project(out,name,paths,margin=25.,v4=False):
     folder=out/"slicer"/name;folder.mkdir(exist_ok=True)
     project=out/(name+".3mf")
     settings={}
@@ -139,7 +147,7 @@ def run_project(out,name,paths,margin=25.):
     for key in ("machine","process","filament"):
         settings.update({k:v for k,v in json.loads((out/"slicer"/(key+".json")).read_text()).items() if k not in ignored})
     settings["version"]="02.08.02.61"
-    placements=create_geometry_3mf(paths,project,settings=settings,margin=margin)
+    placements=create_geometry_3mf(paths,project,settings=settings,margin=margin,console_side_down=v4)
     cmd=[str(EXE),"--debug","2","--datadir",str(out/"slicer"/"isolated_config"),
          "--arrange","0","--orient","0","--ensure-on-bed",
          "--slice","0","--export-settings",str(folder/"effective_settings.json"),
@@ -151,26 +159,53 @@ def run_project(out,name,paths,margin=25.):
     if result.returncode or not (folder/"plate_1.gcode").exists():
         print(log.read_text()[-8000:])
         raise RuntimeError(f"Bambu slice failed ({result.returncode})")
-    return {"project":project.name,"slice_return_code":result.returncode,"placements":placements,
+    # Bambu 02.08.02.61 crashes in CLI --export-3mf after slicing. Keep
+    # the reproducible native project and G-code; export the cached sliced
+    # project through Studio's File > Save Project flow.
+    return {"project":project.name,"gcode":f"slicer/{name}/plate_1.gcode",
+            "slice_return_code":result.returncode,"placements":placements,
             "log":f"validation/{name}_slice.log","validated_by":"Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"}
 
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--output",type=Path,default=ROOT/"output/v3")
+    ap.add_argument("--output",type=Path,default=ROOT/"output/v10")
     ap.add_argument("--presets-only",action="store_true")
     args=ap.parse_args();out=args.output.resolve()
     (out/"slicer").mkdir(exist_ok=True)
-    presets(out/"slicer")
+    revision=json.loads((out/"validation/geometry_report.json").read_text())["revision"]
+    if revision=='prototype-v10':
+        from prepare_v10 import main as prepare_v10
+        return prepare_v10(out, presets_only=args.presets_only)
+    if revision=='prototype-v9':
+        from prepare_v9 import main as prepare_v9
+        return prepare_v9(out, presets_only=args.presets_only)
+    if revision=='prototype-v8' and not args.presets_only:
+        from prepare_v8 import main as prepare_v8
+        return prepare_v8(out)
+    if revision=='prototype-v7' and not args.presets_only:
+        from prepare_v7 import main as prepare_v7
+        return prepare_v7(out)
+    v4=revision in ("prototype-v4","prototype-v5","prototype-v6","prototype-v7","prototype-v8")
+    presets(out/"slicer",v4=v4)
+    if revision in ("prototype-v5","prototype-v6","prototype-v7","prototype-v8"):
+        file=out/"slicer/process.json"
+        data=json.loads(file.read_text())
+        for key in ("name","print_settings_id"):data[key]=data[key].replace("V4",revision.replace('prototype-','').upper())
+        file.write_text(json.dumps(data,indent=2)+"\n")
     if args.presets_only: return
     reports=[]
-    reports.append(run_project(out,"Holder_V3_A1_PLA_PROTOTYPE",[out/f"{s}_insert_PROTOTYPE.stl" for s in ("left","right")]))
+    label=revision.replace('prototype-','').upper()
+    name=f"Holder_{label}_A1_PLA_PROTOTYPE" if v4 else "Holder_V3_A1_PLA_PROTOTYPE"
+    reports.append(run_project(out,name,
+                               [out/f"{s}_insert_PROTOTYPE.stl" for s in ("left","right")],v4=v4))
     # Three full camera rings plus six end gauges comfortably fit one A1 plate
     # when the camera rings are placed first in a row.
     coupons=sorted((out/"fit_tests").glob("camera*.stl"))+sorted((out/"fit_tests").glob("*nub*.stl"))
-    reports.append(run_project(out,"Fit_tests_V3_A1_PLA",coupons,margin=8.))
+    if coupons:
+        reports.append(run_project(out,"Fit_tests_V3_A1_PLA",coupons,margin=8.))
     (out/"validation"/"slicer_report.json").write_text(json.dumps(reports,indent=2)+"\n")
-    print("Both Bambu projects exported and sliced.",flush=True)
+    print(f"{len(reports)} Bambu project(s) exported and sliced.",flush=True)
 
 
 if __name__=="__main__":main()

@@ -1,0 +1,145 @@
+{
+  "computational_geometry_status": "PASS",
+  "geometry": {
+    "meshes": [
+      {
+        "part": "left",
+        "watertight_single_solid": true,
+        "installed_maximum_z_mm": 4.373041152954102,
+        "cad_stl_volume_difference_percent": 0.05041880694300857,
+        "sha256": "e29c7e3cac2952d74e95a427f2202e9294a6361d6d00fb8fa9bc728a1039901b"
+      },
+      {
+        "part": "right",
+        "watertight_single_solid": true,
+        "installed_maximum_z_mm": 4.400000095367432,
+        "cad_stl_volume_difference_percent": 0.07815414291472379,
+        "sha256": "0fda77dd8f6f2af1f7edc823f50dc660dc1b178a71e7fdf7306e42e61f815221"
+      }
+    ],
+    "nub_sections": [
+      {
+        "part": "left",
+        "local_height_fraction": 1e-05,
+        "width_mm": 13.499993711665656,
+        "lower_end_y_mm": 88.20051031408899,
+        "upper_end_y_mm": 153.09949768385624
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.125,
+        "width_mm": 13.160547217730159,
+        "lower_end_y_mm": 88.2864302988124,
+        "upper_end_y_mm": 153.01357275392434
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.25,
+        "width_mm": 12.265624961243638,
+        "lower_end_y_mm": 88.51295831846194,
+        "upper_end_y_mm": 152.7870370760737
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.5,
+        "width_mm": 9.550000435215459,
+        "lower_end_y_mm": 89.20035491528533,
+        "upper_end_y_mm": 152.09964806944595
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.75,
+        "width_mm": 6.834374690890618,
+        "lower_end_y_mm": 89.88775922334007,
+        "upper_end_y_mm": 151.41224386449647
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.875,
+        "width_mm": 5.9394531955998495,
+        "lower_end_y_mm": 90.11428724464301,
+        "upper_end_y_mm": 151.1857082311747
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.99999,
+        "width_mm": 5.600007369602876,
+        "lower_end_y_mm": 90.20020589674156,
+        "upper_end_y_mm": 151.09979581077968
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 1e-05,
+        "width_mm": 13.499990814312255,
+        "lower_end_y_mm": 18.350510800419727,
+        "upper_end_y_mm": 154.3694866191683
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.125,
+        "width_mm": 13.160552978515625,
+        "lower_end_y_mm": 18.608305817579932,
+        "upper_end_y_mm": 154.1546582006169
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.25,
+        "width_mm": 12.265625104539978,
+        "lower_end_y_mm": 19.28795951278176,
+        "upper_end_y_mm": 153.58829139284853
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.5,
+        "width_mm": 9.550003116302577,
+        "lower_end_y_mm": 21.350358414617986,
+        "upper_end_y_mm": 151.8696372077839
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.75,
+        "width_mm": 6.834380811007662,
+        "lower_end_y_mm": 23.412755155494438,
+        "upper_end_y_mm": 150.1509980682157
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.875,
+        "width_mm": 5.939453089687447,
+        "lower_end_y_mm": 24.092410664124195,
+        "upper_end_y_mm": 149.58461871132081
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.99999,
+        "width_mm": 5.600015088294029,
+        "lower_end_y_mm": 24.350204111544258,
+        "upper_end_y_mm": 149.36979023926506
+      }
+    ],
+    "camera_opening_width_mm": 65.10000324249268,
+    "camera_opening_height_mm": 42.09926916017436,
+    "phone_seating_keepout_clear": true,
+    "insert_overlap_mm3": 0,
+    "underside_opening_width_mm": 13.5,
+    "left_edge_inward_shift_mm": 1.999999877949886,
+    "left_lower_corner_radius_mm": 15,
+    "left_console_edge_round_mm": 0.9
+  },
+  "V4_output_files_preserved": 36,
+  "V4_reference_files_absent": 0,
+  "physical_diagnostics": {
+    "phone_back_tilt_degrees": 1.5978005994066036,
+    "housing_projection_mm": 2.8999999999999986,
+    "lens_projection_mm": 5.0,
+    "lens_to_flat_pad_gap_range_mm": [
+      -2.0703129074400515,
+      -0.9131573316083763
+    ],
+    "lens_clearance_status": "PREDICTED_INTERFERENCE",
+    "diagnostic_is_blocking": false,
+    "assumptions": "Rigid phone, ideal flat pad, no fabric compression; exact lens positions unmeasured.",
+    "scan_status": "Historical scan is not a gate: its earlier 72.1 mm width calibration is superseded.",
+    "physical_fit_status": "UNTESTED: provisional console and nub profiles; no clearance certification."
+  }
+}

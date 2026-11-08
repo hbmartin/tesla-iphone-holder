@@ -1,0 +1,5 @@
+[2026-10-20 11:30:52.335449] [0x00000001fe2fe300] [trace]   Initializing StaticPrintConfigs
+[2026-10-20 11:30:52.343187] [0x00000001fe2fe300] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-10-20 11:30:52.440213] [0x00000001fe2fe300] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab A1 0.4 nozzle.json 
+[2026-10-20 11:30:52.440237] [0x00000001fe2fe300] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/Tesla holder V4 PROTOTYPE - A1 0.20mm.json 
+[2026-10-20 11:30:52.441105] [0x00000001fe2fe300] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types

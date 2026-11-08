@@ -1,0 +1,164 @@
+[
+  {
+    "project": "Holder_V7_A1_PLA_PROTOTYPE.3mf",
+    "gcode": "slicer/Holder_V7_A1_PLA_PROTOTYPE/plate_1.gcode",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "left_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            25.0,
+            25.0,
+            0.0
+          ],
+          [
+            70.9783,
+            183.9,
+            4.373
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "right_insert_PROTOTYPE",
+        "bounds_mm": [
+          [
+            80.9783,
+            25.0,
+            0.0
+          ],
+          [
+            115.4783,
+            185.17,
+            4.4
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      }
+    ],
+    "log": "validation/Holder_V7_A1_PLA_PROTOTYPE_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  },
+  {
+    "project": "Fit_tests_V7_A1_PLA.3mf",
+    "gcode": "slicer/Fit_tests_V7_A1_PLA/plate_1.gcode",
+    "slice_return_code": 0,
+    "placements": [
+      {
+        "name": "right_nub_clearance_03",
+        "bounds_mm": [
+          [
+            12.0,
+            12.0,
+            0.0
+          ],
+          [
+            35.6,
+            154.02,
+            4.3406
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "right_nub_clearance_05",
+        "bounds_mm": [
+          [
+            45.6,
+            12.0,
+            0.0
+          ],
+          [
+            69.6,
+            154.02,
+            4.3406
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "right_nub_clearance_07",
+        "bounds_mm": [
+          [
+            79.6,
+            12.0,
+            0.0
+          ],
+          [
+            104.0,
+            154.02,
+            4.3406
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "left_nub_clearance_03",
+        "bounds_mm": [
+          [
+            114.0,
+            12.0,
+            0.0
+          ],
+          [
+            137.6,
+            82.9,
+            4.3136
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "left_nub_clearance_05",
+        "bounds_mm": [
+          [
+            147.6,
+            12.0,
+            0.0
+          ],
+          [
+            171.6,
+            82.9,
+            4.3136
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "left_nub_clearance_07",
+        "bounds_mm": [
+          [
+            181.6,
+            12.0,
+            0.0
+          ],
+          [
+            206.0,
+            82.9,
+            4.3136
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      },
+      {
+        "name": "lower_left_corner_C7",
+        "bounds_mm": [
+          [
+            12.0,
+            164.02,
+            0.0
+          ],
+          [
+            49.9117,
+            204.02,
+            1.8491
+          ]
+        ],
+        "print_orientation": "console side down; supported nub overhangs"
+      }
+    ],
+    "log": "validation/Fit_tests_V7_A1_PLA_slice.log",
+    "validated_by": "Bambu Studio read and sliced this exact native project with embedded settings; no CLI settings overrides"
+  }
+]

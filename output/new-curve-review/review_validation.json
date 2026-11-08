@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "photo_pairs": 7,
+  "source_photos_hash_verified": 14,
+  "traced_profiles": 7,
+  "clipped_extraction_edges": 0,
+  "local_links_verified": 36,
+  "candidate_clearance_arithmetic": "PASS",
+  "prior_revision": "V6 retained",
+  "geometry_modified": false,
+  "physical_fit_validated": false,
+  "upper_width_height_reference": "Confirmed by user: approximately 4.4 mm above flat pad, not the crown."
+}

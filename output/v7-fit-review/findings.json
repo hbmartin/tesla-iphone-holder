@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-04",
+  "user_confirmed": {
+    "both_inserts_rest_flat": true,
+    "sideways_play": true
+  },
+  "photographs": {
+    "IMG_0196.jpeg": "360fbbe8113162790d6c3708f51ae60a73825080f3e7b6380c9f974c16cf9d9d",
+    "IMG_0197.jpeg": "6e1cf896ff4f491b14a752bc3c14d915e1abea9bd5843a5fce5107aa03a15d50",
+    "IMG_0198.jpeg": "165b3735cf839d385b1f5e6d2ab86bbef257a8704104a052a5d7928a1a16c052"
+  },
+  "findings": [
+    "The V7 elliptical width law is an unmeasured assumption and adds substantial mid-height clearance.",
+    "wall_x() extrapolates the two upper wall stations through the lower corner, despite the earlier evidence review explicitly cautioning against this.",
+    "The N4 gauge capture is incomplete at its bottom end. V7 aligns that endpoint to Y=0 without an independent crease registration.",
+    "The corner and phone keepout intersection produces the pointed lower tip visible in IMG_0196.",
+    "The photographed console transition is approximately 6 mm beyond the assumed crease; this is not a replacement direct measurement."
+  ],
+  "width_comparisons_mm": [
+    {
+      "y": 40,
+      "z": 1.849097833551851,
+      "v7_opening": 16.74465319638774,
+      "straight_interpolation_comparison": 14.007629677558503,
+      "extra_total_width": 2.737023518829238
+    },
+    {
+      "y": 80,
+      "z": 2.698195667103702,
+      "v7_opening": 15.194195352951807,
+      "straight_interpolation_comparison": 12.174350264207916,
+      "extra_total_width": 3.0198450887438906
+    },
+    {
+      "y": 120,
+      "z": 3.5472935006555537,
+      "v7_opening": 12.735460007426486,
+      "straight_interpolation_comparison": 10.341070850857328,
+      "extra_total_width": 2.394389156569158
+    },
+    {
+      "y": 145,
+      "z": 4.077979646625461,
+      "v7_opening": 10.43777628323533,
+      "straight_interpolation_comparison": 9.195271217513211,
+      "extra_total_width": 1.2425050657221188
+    }
+  ],
+  "next_geometry_rules": [
+    "Use the 2 mm width as an additional absolute-Z anchor; remove the broad unmeasured elliptical assumption.",
+    "Keep full measured base clearance; do not force a constant narrow slot through the entire thickness.",
+    "Locate the corner and nub ends using the measured left base-end-to-crease distance.",
+    "Constrain the upper wall locally, then blend independently to the lower corner evidence.",
+    "Keep the phone footprint clear to the real crease and remove the thin pointed tip with a finite rounded termination.",
+    "Validate a localized nub/corner test before another full print."
+  ],
+  "pending_measurements": [
+    "Nub width at Z=2 mm, separately if the nubs differ.",
+    "Left wide-base lower end to bottom crease along the pad."
+  ],
+  "cad_modified": false,
+  "printer_dispatch": false
+}

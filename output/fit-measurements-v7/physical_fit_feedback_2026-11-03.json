@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-03",
+  "tested_revision": "V6",
+  "status": "physical_fit_failed",
+  "user_report": {
+    "overall": "Better but still not acceptable",
+    "nub_cutouts": "Both pieces' cutouts are still too small and narrow",
+    "lower_left_corner": "Left piece still does not sit well in the base lower-left corner"
+  },
+  "unresolved": [
+    "Actual printed mouth dimensions and support residue",
+    "First contact locations and seating gaps",
+    "Absolute nub cross-sections at known console stations",
+    "Absolute nub axial profiles and end locations",
+    "Lower-left corner plan outline and upright transition profiles",
+    "Whether nub interference contributes to the observed corner lift"
+  ],
+  "next_design_rules": [
+    "Treat the old 5.6 and 13.5 mm widths as failed prototype targets, not fixed fit constraints",
+    "Do not preserve end reductions where they cause demonstrated interference",
+    "Use measured profiles at actual scale and location with stated measurement uncertainty",
+    "Keep physical clearance separate from printer compensation",
+    "Validate separate nub and corner fit samples before another full assembly",
+    "Retain confirmed phone and camera dimensions and the 4.5 mm hard thickness limit"
+  ],
+  "models_modified_in_this_measurement_task": false
+}

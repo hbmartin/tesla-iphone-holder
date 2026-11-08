@@ -1,0 +1,155 @@
+{
+    "error_string": "Success.",
+    "export_time": 0,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 408,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 51.22966003417969,
+                "Bridge": 26.643705368041992,
+                "Custom": 368.9449157714844,
+                "Flush": 25.0,
+                "Gap infill": 84.82832336425781,
+                "Inner wall": 694.025634765625,
+                "Internal solid infill": 430.04736328125,
+                "Outer wall": 609.8087158203125,
+                "Overhang wall": 34.01597213745117,
+                "Sparse infill": 151.7225341796875,
+                "Support": 180.74073791503906,
+                "Support interface": 34.75693130493164,
+                "Support transition": 15.427811622619629,
+                "Top surface": 329.2298889160156,
+                "Travel": 394.515380859375,
+                "Undefined": 377.85003662109375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "unknown",
+                    "id": 1,
+                    "main_used_g": 21.5886173248291,
+                    "total_used_g": 21.5886173248291
+                }
+            ],
+            "generate_support_material_time": 25,
+            "id": 1,
+            "infill_time": 129,
+            "layer_filament_change": 0,
+            "main_predication": 3012.15087890625,
+            "make_perimeters_time": 120,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 142.01998901367188,
+                        "height": 4.34056282043457,
+                        "width": 23.600006103515625,
+                        "x": 12.0,
+                        "y": 12.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "right_nub_clearance_03",
+                    "triangle_count": 87988
+                },
+                {
+                    "bbox": {
+                        "depth": 142.01998901367188,
+                        "height": 4.34056282043457,
+                        "width": 24.0,
+                        "x": 45.600006103515625,
+                        "y": 12.0,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "right_nub_clearance_05",
+                    "triangle_count": 68772
+                },
+                {
+                    "bbox": {
+                        "depth": 142.01998901367188,
+                        "height": 4.34056282043457,
+                        "width": 24.399993896484375,
+                        "x": 79.60000610351563,
+                        "y": 12.0,
+                        "z": 0.0
+                    },
+                    "id": 13,
+                    "name": "right_nub_clearance_07",
+                    "triangle_count": 48972
+                },
+                {
+                    "bbox": {
+                        "depth": 70.90000915527344,
+                        "height": 4.31360387802124,
+                        "width": 23.600006103515625,
+                        "x": 114.0,
+                        "y": 12.0,
+                        "z": 0.0
+                    },
+                    "id": 17,
+                    "name": "left_nub_clearance_03",
+                    "triangle_count": 81684
+                },
+                {
+                    "bbox": {
+                        "depth": 70.90000915527344,
+                        "height": 4.31360387802124,
+                        "width": 24.0,
+                        "x": 147.60000610351563,
+                        "y": 12.0,
+                        "z": 0.0
+                    },
+                    "id": 21,
+                    "name": "left_nub_clearance_05",
+                    "triangle_count": 62404
+                },
+                {
+                    "bbox": {
+                        "depth": 70.90000915527344,
+                        "height": 4.31360387802124,
+                        "width": 24.399993896484375,
+                        "x": 181.60000610351563,
+                        "y": 12.0,
+                        "z": 0.0
+                    },
+                    "id": 25,
+                    "name": "left_nub_clearance_07",
+                    "triangle_count": 42502
+                },
+                {
+                    "bbox": {
+                        "depth": 40.0,
+                        "height": 1.8490979671478271,
+                        "width": 37.91165542602539,
+                        "x": 12.0,
+                        "y": 164.01998901367188,
+                        "z": 0.0
+                    },
+                    "id": 29,
+                    "name": "lower_left_corner_C7",
+                    "triangle_count": 20400
+                }
+            ],
+            "sliced_time": 858,
+            "sliced_time_with_cache": 543,
+            "total_predication": 3414.430419921875,
+            "triangle_count": 412722,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 20.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 3
+}

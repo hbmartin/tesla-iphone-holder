@@ -1,0 +1,952 @@
+{
+  "revision": "prototype-v8",
+  "parameters": {
+    "units": "mm",
+    "revision": "prototype-v8",
+    "phone_width": 71.1,
+    "phone_length": 150.0,
+    "phone_depth": 8.8,
+    "phone_center_x": 46.5,
+    "phone_bottom_y": 0.0,
+    "phone_corner_radius": 11.0,
+    "left_nub_x": 0.0,
+    "left_nub_bottom_y": 95.0,
+    "left_nub_width": 17.0,
+    "left_nub_length": 63.5,
+    "right_nub_x": 93.0,
+    "right_nub_bottom_y": 25.15,
+    "right_nub_width": 17.0,
+    "right_nub_length": 134.62,
+    "nub_clearance": 0.5,
+    "camera_width": 64.5,
+    "camera_length": 41.5,
+    "camera_top_offset": 3.5,
+    "camera_center_offset_x": 0.0,
+    "camera_corner_radius": 6.0,
+    "camera_clearance": 0.3,
+    "thickness": 4.4,
+    "edge_chamfer": 0.0,
+    "hex_flat_to_flat": 6.0,
+    "hex_web": 1.6,
+    "solid_border": 2.4,
+    "left_outer_x_min": -15.5,
+    "left_wing_x_max": 25.0,
+    "left_wing_y_min": 0.0,
+    "left_wing_y_max": 118.0,
+    "left_wing_corner_radius": 8.5,
+    "left_nub_collar_border": 6.0,
+    "right_outer_x_min": 74.0,
+    "right_outer_x_max": 108.5,
+    "right_outer_y_min": 0.0,
+    "right_nub_collar_border": 6.0,
+    "right_corner_radius": 9.0,
+    "charging_open_radius": 28.5,
+    "charging_open_offset_x": 0.0,
+    "charging_open_offset_y": 75.0,
+    "fit_clearances": [
+      0.3
+    ],
+    "_notes": {
+      "datum": "XY follows the sloped console; Y=0 is the inner lower crease; Z=0 is the flat pad. Phone camera end is +Y. Thickness is perpendicular to the pad.",
+      "phone": "User confirmed 71.1 x 150 mm. Body thickness 8.8 mm retained, body+housing 11.7, body+lenses 13.8. Bottom back seats at Z=0; the first 36 mm of the phone footprint is clear of print.",
+      "console": "Both nub Y datums shift +6.1 mm relative to the corrected crease; left base lower Y=95, right=25.15. Pitch and lengths unchanged.",
+      "nub_openings": "17.6 mm base / 12.6 mm at Z=2 / 8.1 mm at Z=4.4. 0.3 mm per side; the Z=2 anchor is photo-estimated.",
+      "camera": "Centered 64.5 x 41.5 housing, Y=105 to146.5 in the phone datum. Aperture 65.1 x42.1 with 0.3 per-side clearance. No extra blending relief or opening-enlarging rim chamfer. Housing R6 remains provisional.",
+      "height": "Shared outer top plane: Z=1 at Y=0 to Z=4.4 at upper assembly edge. Phone-bearing plane passes through the bottom crease and outer plane at Y=150. Outboard lower structural edges stay 1 mm. Hard installed Z limit 4.5 mm.",
+      "wall": "Upper measured gaps plus 0.5 mm clearance and requested 2 mm inset retained. Lower wall blends independently into a photo-registered turn with 0.5 mm allowance.",
+      "charging": "Retain bottom crease position and central opening. Coil location is not measured; no charging performance claim. Compare the new fit with the bare-phone baseline.",
+      "prototype": "V8 reduces excess V7 side clearance and completes the lower console turn using authorized photo estimates. Physical fit untested.",
+      "scan": "Old scan calibrated to 72.1 mm width is supporting evidence only; new user measurements take precedence."
+    },
+    "phone_body_plus_bump": 11.7,
+    "phone_body_plus_lenses": 13.8,
+    "nub_base_gap": 76.0,
+    "coupon_thickness": 2.4,
+    "left_wall_gap_bottom": 10.3,
+    "left_wall_gap_top": 14.7,
+    "left_wall_gaps_from_edge": true,
+    "left_wall_clearance": 0.5,
+    "left_outline_radius": 2.4,
+    "camera_bottom_y": 105.0,
+    "camera_lower_blend_relief": 0.0,
+    "nub_positions_confirmed": true,
+    "maximum_allowed_thickness": 4.5,
+    "lower_edge_thickness": 1.0,
+    "phone_seating_relief_length": 36.0,
+    "phone_seating_clearance": 0.2,
+    "lower_outline_radius": 9.0,
+    "underside_edge_radius": 0.5,
+    "nub_upper_opening_width": 8.1,
+    "nub_legacy_rim_leadin": 0.2,
+    "left_nub_upper_bottom_reduction": 0.0,
+    "left_nub_upper_top_reduction": 0.0,
+    "right_nub_upper_bottom_reduction": 0.0,
+    "right_nub_upper_top_reduction": 0.0,
+    "nub_profile_blend": "absolute-Z photo-anchored monotone PCHIP",
+    "allow_unverified_physical_fit": true,
+    "print_orientation": "console-side down",
+    "nub_profile_sections": 44,
+    "nub_lower_opening_width": 17.6,
+    "left_outer_edge_inset": 2.0,
+    "left_lower_outer_corner_radius": null,
+    "left_console_edge_radius": 0.9,
+    "stl_tolerance": 0.005,
+    "stl_angular_tolerance": 0.03,
+    "cad_mass_tolerance": 1e-07,
+    "nub_measured_base_width": 17.0,
+    "nub_measured_upper_width": 7.5,
+    "nub_measured_upper_z": 4.4,
+    "nub_fit_clearance": 0.3,
+    "nub_end_clearance": 0.7,
+    "nub_end_cap_run": 2.5,
+    "left_corner_join_radius": 0.45,
+    "left_wall_underside_setback": 3.0,
+    "left_wall_transition_height": 0.9,
+    "front_underside_setback": 1.5,
+    "front_transition_height": 0.5,
+    "left_nub_y": 126.75,
+    "left_outer_y_max": 165.0,
+    "right_nub_y": 92.46000000000001,
+    "right_outer_y_max": 166.27,
+    "taper_upper_y": 166.27,
+    "outer_top_slope": 0.020448667829434053,
+    "phone_support_top_height": 4.067300174415108,
+    "phone_support_slope": 0.027115334496100717,
+    "nub_width_anchors": [
+      [
+        0,
+        17
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4.4,
+        7.5
+      ]
+    ],
+    "crease_shift_from_v7": 6.1,
+    "corner_bezier_controls": [
+      [
+        -15.182130219956909,
+        38.54960578208034
+      ],
+      [
+        -14.382130219956908,
+        21.17215773438715
+      ],
+      [
+        -11.30989684041045,
+        0
+      ],
+      [
+        24.881000516335554,
+        0
+      ]
+    ],
+    "lower_corner_clearance": 0.5,
+    "lower_tip_round_radius": 1.2,
+    "v8_evidence": {
+      "source": "output/v8/evidence/photo_estimates.json",
+      "source_sha256": "2e8fcddc8eba9f608a25a37c69cb14149e1b6828cf41eb2825241f59fed36208",
+      "photo_estimates": {
+        "revision": "V8 estimates",
+        "date": "2026-11-04",
+        "authorization": "User explicitly requested estimates from existing gauge and previous photos.",
+        "confirmed_fit": {
+          "both_V7_inserts_rest_flat": true,
+          "sideways_play": true
+        },
+        "confirmed_dimensions": {
+          "nub_width_z0": 17.0,
+          "nub_width_z4_4": 7.5,
+          "left_side_gap_lower": 10.3,
+          "left_side_gap_upper": 14.7
+        },
+        "P5_cross_section_widths": [
+          [
+            {
+              "height_mm_approx": 1,
+              "width_mm_approx": 15.775581792413012
+            },
+            {
+              "height_mm_approx": 2,
+              "width_mm_approx": 11.668322124524952
+            },
+            {
+              "height_mm_approx": 3,
+              "width_mm_approx": 9.17568757970739
+            },
+            {
+              "height_mm_approx": 4.4,
+              "width_mm_approx": 6.429197504777777
+            }
+          ],
+          [
+            {
+              "height_mm_approx": 1,
+              "width_mm_approx": 15.536894121085865
+            },
+            {
+              "height_mm_approx": 2,
+              "width_mm_approx": 11.689443826823037
+            },
+            {
+              "height_mm_approx": 3,
+              "width_mm_approx": 9.547058675422264
+            },
+            {
+              "height_mm_approx": 4.4,
+              "width_mm_approx": 7.217653717723039
+            }
+          ]
+        ],
+        "N1_consistent_tip_edge_traces": [
+          {
+            "label": "image-left",
+            "scale_px_per_mm": 7.5,
+            "points": [
+              [
+                282,
+                493
+              ],
+              [
+                294,
+                490
+              ],
+              [
+                302,
+                477
+              ],
+              [
+                312,
+                463
+              ],
+              [
+                323,
+                452
+              ],
+              [
+                334,
+                447
+              ],
+              [
+                345,
+                446
+              ],
+              [
+                357,
+                453
+              ],
+              [
+                369,
+                464
+              ],
+              [
+                380,
+                478
+              ],
+              [
+                394,
+                492
+              ]
+            ],
+            "baseline": [
+              [
+                282,
+                493
+              ],
+              [
+                394,
+                492
+              ]
+            ],
+            "raw_widths_at_0_2_4_4_mm": [
+              14.933333333333334,
+              10.376743562200485,
+              6.472257466469705
+            ],
+            "anchored_width_at_2_mm": 11.883912695394844
+          },
+          {
+            "label": "image-right",
+            "scale_px_per_mm": 7.2,
+            "points": [
+              [
+                916,
+                481
+              ],
+              [
+                936,
+                474
+              ],
+              [
+                950,
+                464
+              ],
+              [
+                965,
+                453
+              ],
+              [
+                977,
+                442
+              ],
+              [
+                992,
+                436
+              ],
+              [
+                1007,
+                435
+              ],
+              [
+                1020,
+                438
+              ],
+              [
+                1032,
+                448
+              ],
+              [
+                1042,
+                460
+              ],
+              [
+                1054,
+                469
+              ],
+              [
+                1066,
+                472
+              ]
+            ],
+            "baseline": [
+              [
+                916,
+                481
+              ],
+              [
+                1066,
+                472
+              ]
+            ],
+            "raw_widths_at_0_2_4_4_mm": [
+              20.833333333333332,
+              12.790832004805818,
+              7.355408431254915
+            ],
+            "anchored_width_at_2_mm": 11.331192436809822
+          }
+        ],
+        "nub_width_profile_mm": [
+          [
+            0,
+            17
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            4.4,
+            7.5
+          ]
+        ],
+        "nub_profile_method": "Monotone PCHIP through direct endpoints and rounded 12 mm photograph estimate at Z=2. Neither intermediate anchor nor interpolated widths are certified measurements.",
+        "selected_per_side_clearance_mm": 0.3,
+        "crease_shift_from_V7_mm": 6.1,
+        "left_nub_base_to_crease_estimate_mm": 95.0,
+        "right_nub_base_to_crease_estimate_mm": 25.15,
+        "crease_method": "IMG_0196 visible inner transition projected using 16 known printed honeycomb centers. Bottom transition is about -6.1 mm in V7 coordinates. Both nub Y datums shift together; lengths and 93 mm pitch are preserved.",
+        "corner_photo_points_in_new_frame_mm": [
+          [
+            -15.180512682639025,
+            38.54974340584744
+          ],
+          [
+            -14.712774517630994,
+            31.915365994649555
+          ],
+          [
+            -13.691817168445898,
+            25.253443233565378
+          ],
+          [
+            -11.895365861845901,
+            19.134152858957222
+          ],
+          [
+            -8.988486967819268,
+            13.69184205247938
+          ],
+          [
+            -4.967089471544959,
+            8.825799892513809
+          ],
+          [
+            0.1627283814786956,
+            5.114868949927433
+          ],
+          [
+            5.837107618066097,
+            2.7817342954991284
+          ],
+          [
+            11.724321564599945,
+            1.1385692889029206
+          ],
+          [
+            18.148870426437117,
+            0.1974046442821482
+          ],
+          [
+            24.881770323265503,
+            -0.04845641808099188
+          ]
+        ],
+        "corner_bezier_controls_mm": [
+          [
+            -15.182130219956909,
+            38.54960578208034
+          ],
+          [
+            -14.382130219956908,
+            21.17215773438715
+          ],
+          [
+            -11.30989684041045,
+            0
+          ],
+          [
+            24.881000516335554,
+            0
+          ]
+        ],
+        "corner_fit_residual_to_photo_rms_mm": 0.0343453465642734,
+        "corner_method": "Fit a complete smooth turn with a horizontal lower tangent to the visible transition. N4 supplies independent turn-shape evidence, but its incomplete endpoint is not forced to the crease.",
+        "corner_clearance_mm": 0.5,
+        "corner_tip_round_mm": 1.2,
+        "wall_method": "Upper wall retains measured gaps plus 0.5 mm allowance and 2 mm inset. Lower section blends independently to the photographed corner; its allowance is 0.5 mm.",
+        "limitations": [
+          "Photo-plane estimates include perspective, pin thickness, uncertain contact height and fabric effects; no calibrated error bound.",
+          "P4 captures near nub ends and has only 3\u20134 mm apparent rise; it cannot supply a 4.4 mm middle-section width.",
+          "N1 front-edge tracing avoids mixing the pin front lip and underside edges.",
+          "N6/N7 10.3/14.7 values remain sideways wall gaps; neither is used as a crease distance.",
+          "A 95 mm left-base-to-crease position is an estimate conditioned on the retained V7 nub footprint registration.",
+          "Bezier residual describes agreement with a manually selected photo curve, not physical accuracy.",
+          "Visible nub crown endpoints do not identify the hidden broad base endpoints."
+        ],
+        "source_sha256": {
+          "IMG_0196.jpeg": "360fbbe8113162790d6c3708f51ae60a73825080f3e7b6380c9f974c16cf9d9d",
+          "IMG_0197.jpeg": "6e1cf896ff4f491b14a752bc3c14d915e1abea9bd5843a5fce5107aa03a15d50",
+          "IMG_0198.jpeg": "165b3735cf839d385b1f5e6d2ab86bbef257a8704104a052a5d7928a1a16c052",
+          "new gauge photos/IMG_0182.jpeg": "833f20803826cb0448c1710126ee92655384b35ebabd996b0cce12a3760a8971",
+          "new gauge photos/IMG_0183.jpeg": "66423d322e56e932d1d055a0597eaa60ce89dd4b5c314f658f248b59ba831d53",
+          "new gauge photos/IMG_0186.jpeg": "eab986e7f8d26b0d40d397a70522e4468cb5df70bddeaf7050cc6a9a4da5be29",
+          "new gauge photos/IMG_0187.jpeg": "8e085b7ecb33510c0211ef130c91ad60d68760ad188481eb17d1c7b5539fadec",
+          "new gauge photos/IMG_0188.jpeg": "0d6b9b64dacf742e0dbcbc6543fb22bace457f479614c9a02935cf560932f98a",
+          "new gauge photos/IMG_0189.jpeg": "707bc0c200f03f3f51fc755c45af36d331efdc3c319c4e0b1564a9b8ba8ec31b",
+          "new gauge photos/IMG_0190.jpeg": "57c70f7ac74516a8d5c374ba4510a16f9d42d6516f85447704baaa754c526a0a",
+          "new gauge photos/IMG_0191.jpeg": "d5d1731655d6bf651503b3141c5144e7401084bbcc359361dc45bfcf54ddb953",
+          "new gauge photos/IMG_0192.jpeg": "9b09408e2685b6d4aa5791fcd48461344b6fb14b091b896c16cee25346ee9f06",
+          "new gauge photos/IMG_0193.jpeg": "11c2a81aa4edf810adbc3ed919f3c4dce74c3af92c17b17dd82f183534642abc",
+          "new gauge photos/IMG_0194.jpeg": "8cf06dcaa5417967e94822eb6328b5db1c8b2fc77da10651d65f335b3bf65851",
+          "new gauge photos/IMG_0195.jpeg": "ad61144239e4024f4071855a7c9318ccd4cd969ec83f9b206c5781831318a461",
+          "curve gauge photos/IMG_0167.jpeg": "655b9521b18b5f7998c1d7f597ae7cb755c5a02ec496dc861ffad5f90444b1b7",
+          "curve gauge photos/IMG_0170.jpeg": "351d79adc5d7696282fbb70b6cd560cc7cc12bd805756059a4e38d848640ce4a",
+          "curve gauge photos/IMG_0172.jpeg": "f679642e71dd4a769a32c38876ee68952dca782c1ca99d20310915b4cdba5c4f"
+        },
+        "source_registration": {
+          "status": "DIAGNOSTIC_ONLY",
+          "registration_photo": "IMG_0196.jpeg",
+          "printed_reference": "V7 honeycomb centers",
+          "cad_points_mm": [
+            [
+              -1.8992224063047546e-16,
+              78.98151682514079
+            ],
+            [
+              7.6,
+              78.9815168251408
+            ],
+            [
+              -3.8,
+              72.39972375637907
+            ],
+            [
+              3.7999999999999994,
+              72.39972375637906
+            ],
+            [
+              -1.8992224063047534e-16,
+              65.81793068761735
+            ],
+            [
+              7.599999999999999,
+              65.81793068761733
+            ],
+            [
+              -3.7999999999999994,
+              59.23613761885559
+            ],
+            [
+              3.8000000000000007,
+              59.236137618855594
+            ],
+            [
+              11.399999999999999,
+              59.23613761885559
+            ],
+            [
+              4.93797825639236e-16,
+              52.65434455009387
+            ],
+            [
+              7.6,
+              52.65434455009387
+            ],
+            [
+              15.2,
+              52.65434455009387
+            ],
+            [
+              -3.7999999999999994,
+              46.07255148133211
+            ],
+            [
+              3.8000000000000007,
+              46.072551481332134
+            ],
+            [
+              11.399999999999999,
+              46.07255148133213
+            ],
+            [
+              4.93797825639236e-16,
+              39.49075841257039
+            ]
+          ],
+          "photo_centers_px": [
+            [
+              334.18895966029726,
+              261.2963906581741
+            ],
+            [
+              405.8719512195122,
+              262.60731707317075
+            ],
+            [
+              297.8724489795918,
+              322.8452380952381
+            ],
+            [
+              368.695775792039,
+              324.36027619821283
+            ],
+            [
+              332.816854401335,
+              385.66416353775554
+            ],
+            [
+              404.0070949940875,
+              386.8446984627513
+            ],
+            [
+              296.98635976129583,
+              446.3124467178176
+            ],
+            [
+              367.4295659295659,
+              447.8034398034398
+            ],
+            [
+              438.4526894385552,
+              449.2500981546918
+            ],
+            [
+              331.22727272727275,
+              508.398569023569
+            ],
+            [
+              402.0251012145749,
+              509.8757085020243
+            ],
+            [
+              472.3585798816568,
+              511.3506903353057
+            ],
+            [
+              295.46646207803593,
+              568.0942569048663
+            ],
+            [
+              365.4744402196874,
+              569.9526827207436
+            ],
+            [
+              436.294835298902,
+              571.2952419682798
+            ],
+            [
+              329.7990451388889,
+              629.2868923611111
+            ]
+          ],
+          "homography_cad_to_photo": [
+            [
+              8.991134961425299,
+              -0.05288407149297098,
+              325.6332156224091
+            ],
+            [
+              0.12439908841254155,
+              -9.268324491578083,
+              983.2995140389282
+            ],
+            [
+              -0.00014355690379428844,
+              -0.0004844670612209308,
+              1.0
+            ]
+          ],
+          "reprojection_rms_px": 0.1449257579474079,
+          "manual_visible_inner_transition_px": [
+            [
+              190,
+              690
+            ],
+            [
+              194,
+              750
+            ],
+            [
+              203,
+              810
+            ],
+            [
+              219,
+              865
+            ],
+            [
+              245,
+              914
+            ],
+            [
+              281,
+              958
+            ],
+            [
+              327,
+              992
+            ],
+            [
+              378,
+              1014
+            ],
+            [
+              431,
+              1030
+            ],
+            [
+              489,
+              1040
+            ],
+            [
+              550,
+              1044
+            ],
+            [
+              650,
+              1048
+            ],
+            [
+              800,
+              1054
+            ]
+          ],
+          "approximate_transition_in_v7_xy_mm": [
+            [
+              -15.180512682639025,
+              32.449743405847435
+            ],
+            [
+              -14.712774517630994,
+              25.815365994649557
+            ],
+            [
+              -13.691817168445898,
+              19.153443233565376
+            ],
+            [
+              -11.895365861845901,
+              13.034152858957222
+            ],
+            [
+              -8.988486967819268,
+              7.591842052479381
+            ],
+            [
+              -4.967089471544959,
+              2.7257998925138085
+            ],
+            [
+              0.1627283814786956,
+              -0.9851310500725663
+            ],
+            [
+              5.837107618066097,
+              -3.318265704500871
+            ],
+            [
+              11.724321564599945,
+              -4.961430711097079
+            ],
+            [
+              18.148870426437117,
+              -5.902595355717851
+            ],
+            [
+              24.881770323265503,
+              -6.1484564180809915
+            ],
+            [
+              35.88626863074136,
+              -6.259530597905741
+            ],
+            [
+              52.33015110530331,
+              -6.425507338322496
+            ]
+          ],
+          "limits": [
+            "Assumes the printed face is locally planar and honeycomb hole centers remain symmetric in perspective.",
+            "Console transition is not on the reference plane; projection and material shading cause unknown error.",
+            "Manual transition is a visible boundary, not a measured flat-pad crease.",
+            "No CAD inputs changed from this photo registration."
+          ]
+        }
+      },
+      "lower_termination": "The phone keepout and console turn intersect. A 1.2 mm plan round removes the thin pointed tip; the left piece may terminate above Y=0 while the phone remains seated directly at the crease."
+    }
+  },
+  "parts": [
+    {
+      "file": "output/v8/left_insert_PROTOTYPE.stl",
+      "kind": "insert",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 49664,
+      "bounds_mm": [
+        [
+          -21.1504,
+          1.4075,
+          0.0
+        ],
+        [
+          25.0,
+          165.0,
+          4.374
+        ]
+      ],
+      "size_mm": [
+        46.1504,
+        163.5925,
+        4.374
+      ],
+      "volume_mm3": 10117.73,
+      "cad_volume_mm3": 10116.731,
+      "hexagonal_openings": 18,
+      "min_hex_to_boundary_mm_before_chamfer": 5.4786,
+      "min_hex_web_mm_before_chamfer": 1.6
+    },
+    {
+      "file": "output/v8/right_insert_PROTOTYPE.stl",
+      "kind": "insert",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 43052,
+      "bounds_mm": [
+        [
+          74.0,
+          -0.0,
+          0.0
+        ],
+        [
+          108.5,
+          166.27,
+          4.4
+        ]
+      ],
+      "size_mm": [
+        34.5,
+        166.27,
+        4.4
+      ],
+      "volume_mm3": 8515.918,
+      "cad_volume_mm3": 8515.906,
+      "hexagonal_openings": 0,
+      "min_hex_to_boundary_mm_before_chamfer": null,
+      "min_hex_web_mm_before_chamfer": null
+    },
+    {
+      "file": "output/v8/fit_tests/left_nub_fit_V8.stl",
+      "kind": "nub_fit_sample",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 96114,
+      "bounds_mm": [
+        [
+          -11.8,
+          91.3,
+          0.0
+        ],
+        [
+          11.8,
+          162.2,
+          4.3168
+        ]
+      ],
+      "size_mm": [
+        23.6,
+        70.9,
+        4.3168
+      ],
+      "volume_mm3": 2960.102,
+      "cad_volume_mm3": 2960.094
+    },
+    {
+      "file": "output/v8/fit_tests/right_nub_fit_V8.stl",
+      "kind": "nub_fit_sample",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 103202,
+      "bounds_mm": [
+        [
+          81.2,
+          21.45,
+          0.0
+        ],
+        [
+          104.8,
+          163.47,
+          4.3427
+        ]
+      ],
+      "size_mm": [
+        23.6,
+        142.02,
+        4.3427
+      ],
+      "volume_mm3": 4299.319,
+      "cad_volume_mm3": 4299.309
+    },
+    {
+      "file": "output/v8/fit_tests/lower_left_corner_C8.stl",
+      "kind": "corner_fit_sample",
+      "cad_valid": true,
+      "cad_solids": 1,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 59788,
+      "bounds_mm": [
+        [
+          -14.708,
+          1.4075,
+          0.0
+        ],
+        [
+          25.0,
+          40.0,
+          1.8179
+        ]
+      ],
+      "size_mm": [
+        39.708,
+        38.5925,
+        1.8179
+      ],
+      "volume_mm3": 1158.96,
+      "cad_volume_mm3": 1158.964
+    }
+  ],
+  "assembly_checks": {
+    "overlap_mm3": 0.0,
+    "phone_seating_interference_mm3": {
+      "left": [
+        0.0,
+        0.0
+      ],
+      "right": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "manufacturing_cleanup": {
+    "left": {
+      "discarded_disconnected_tip_volume_mm3": 0.004552032315069778
+    },
+    "right": {
+      "discarded_disconnected_tip_volume_mm3": 0.0
+    }
+  },
+  "physical_diagnostics": {
+    "phone_back_tilt_degrees": 1.5532136390123685,
+    "housing_projection_mm": 2.8999999999999986,
+    "lens_projection_mm": 5.0,
+    "lens_to_flat_pad_gap_range_mm": [
+      -2.152098867224453,
+      -1.0272259362082798
+    ],
+    "lens_clearance_status": "PREDICTED_INTERFERENCE",
+    "diagnostic_is_blocking": false,
+    "assumptions": "Rigid phone, ideal flat pad, no fabric compression; exact lens positions unmeasured.",
+    "scan_status": "Historical scan is not a gate: its earlier 72.1 mm width calibration is superseded.",
+    "physical_fit_status": "UNTESTED: provisional console and nub profiles; no clearance certification."
+  },
+  "opening_dimensions": [
+    {
+      "z": 0,
+      "width": 17.6
+    },
+    {
+      "z": 1,
+      "width": 14.942020750988144
+    },
+    {
+      "z": 2,
+      "width": 12.6
+    },
+    {
+      "z": 3,
+      "width": 10.547824028326746
+    },
+    {
+      "z": 4,
+      "width": 8.739904479578392
+    },
+    {
+      "z": 4.4,
+      "width": 8.1
+    }
+  ],
+  "fit_sample_labels": {
+    "L8/R8": ".3 mm per side; photo-anchored profile; matches full inserts",
+    "C8": "Actual lower 40 mm of left insert, no nub constraint"
+  }
+}

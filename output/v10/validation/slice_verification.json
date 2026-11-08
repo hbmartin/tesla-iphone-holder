@@ -1,0 +1,61 @@
+{
+  "project": "Holder_V10_A1_PLA_OUTWARD_FACE_DOWN.3mf",
+  "gcode": "slicer/Holder_V10_A1_PLA_OUTWARD_FACE_DOWN/plate_1.gcode",
+  "objects": 1,
+  "model_layers": 22,
+  "total_z_events": 22,
+  "estimated_minutes": 63.06768798828125,
+  "filament_grams": 22.844009399414062,
+  "settings_verified": true,
+  "warnings": "",
+  "support_layers_mm": [
+    0.2,
+    0.4,
+    0.6
+  ],
+  "print_leading_edge_extrusion_points": {
+    "0.2": [
+      779
+    ],
+    "0.4": [
+      900
+    ],
+    "0.6": [
+      1016
+    ],
+    "0.8": [
+      1070
+    ],
+    "1.0": [
+      715
+    ]
+  },
+  "structural_path_checks": {
+    "installed_lower_edges": {
+      "left": {
+        "0.2": 131,
+        "0.4": 157,
+        "0.6": 142,
+        "0.8": 155,
+        "1.0": 64
+      },
+      "right": {
+        "0.2": 216,
+        "0.4": 230,
+        "0.6": 238,
+        "0.8": 222,
+        "1.0": 107
+      }
+    },
+    "bridge_first_layer_crossings": {
+      "20": 28,
+      "30": 22,
+      "46.5": 20,
+      "65": 26,
+      "73": 22
+    }
+  },
+  "preview": "previews/sliced_full_parts.png",
+  "editable_project_contains_cached_gcode": false,
+  "printer_dispatch": false
+}

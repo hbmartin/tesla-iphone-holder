@@ -1,0 +1,218 @@
+{
+  "computational_geometry_status": "PASS",
+  "geometry": {
+    "meshes": [
+      {
+        "part": "left",
+        "watertight_single_solid": true,
+        "installed_maximum_z_mm": 4.373041152954102,
+        "cad_stl_volume_difference_percent": 0.0672891027220148,
+        "sha256": "8c7883dcae37e1392fa9a602bd0b8121b7d251513af4c396d09642234da046b3"
+      },
+      {
+        "part": "right",
+        "watertight_single_solid": true,
+        "installed_maximum_z_mm": 4.400000095367432,
+        "cad_stl_volume_difference_percent": 0.10306326068520238,
+        "sha256": "ae4304899f9fcfa38c8f3950042c6623053a14d913d5c33184e289160e1526ba"
+      }
+    ],
+    "nub_sections": [
+      {
+        "part": "left",
+        "local_height_fraction": 1e-05,
+        "width_mm": 19.399986712931117,
+        "lower_end_y_mm": 88.20072864939172,
+        "upper_end_y_mm": 153.09926677541304
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.125,
+        "width_mm": 18.807031606772476,
+        "lower_end_y_mm": 88.2007049225775,
+        "upper_end_y_mm": 153.0992981291799
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.25,
+        "width_mm": 17.24374974618941,
+        "lower_end_y_mm": 88.20064405240713,
+        "upper_end_y_mm": 153.09935899876504
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.5,
+        "width_mm": 12.4999997620526,
+        "lower_end_y_mm": 88.20047133463737,
+        "upper_end_y_mm": 153.09953171711658
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.75,
+        "width_mm": 7.756250080310151,
+        "lower_end_y_mm": 88.20029367043517,
+        "upper_end_y_mm": 153.09971432745482
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.875,
+        "width_mm": 6.192969143764669,
+        "lower_end_y_mm": 88.20023280030274,
+        "upper_end_y_mm": 153.0997626220581
+      },
+      {
+        "part": "left",
+        "local_height_fraction": 0.99999,
+        "width_mm": 5.600010650168359,
+        "lower_end_y_mm": 88.20020773162318,
+        "upper_end_y_mm": 153.0997939786172
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 1e-05,
+        "width_mm": 19.39997140310055,
+        "lower_end_y_mm": 18.350732556251895,
+        "upper_end_y_mm": 154.36926643400184
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.125,
+        "width_mm": 18.807037316427824,
+        "lower_end_y_mm": 18.608517958602853,
+        "upper_end_y_mm": 154.15444605964643
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.25,
+        "width_mm": 17.243744174326523,
+        "lower_end_y_mm": 19.288146110678863,
+        "upper_end_y_mm": 153.58810074694796
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.5,
+        "width_mm": 12.500000536915437,
+        "lower_end_y_mm": 21.350468152303687,
+        "upper_end_y_mm": 151.86953333174867
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.75,
+        "width_mm": 7.756255973594705,
+        "lower_end_y_mm": 23.412790037651124,
+        "upper_end_y_mm": 150.1509559812806
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.875,
+        "width_mm": 6.192962688939133,
+        "lower_end_y_mm": 24.09241982606039,
+        "upper_end_y_mm": 149.584610641033
+      },
+      {
+        "part": "right",
+        "local_height_fraction": 0.99999,
+        "width_mm": 5.600025532434472,
+        "lower_end_y_mm": 24.350204111697035,
+        "upper_end_y_mm": 149.36979023911383
+      }
+    ],
+    "camera_opening_width_mm": 65.10000324249268,
+    "camera_opening_height_mm": 42.09926916017436,
+    "phone_seating_keepout_clear": true,
+    "insert_overlap_mm3": 0,
+    "underside_openings_match_V3": true
+  },
+  "V3_output_files_preserved": 46,
+  "V3_reference_files_absent": 0,
+  "physical_diagnostics": {
+    "phone_back_tilt_degrees": 1.5978005994066036,
+    "housing_projection_mm": 2.8999999999999986,
+    "lens_projection_mm": 5.0,
+    "lens_to_flat_pad_gap_range_mm": [
+      -2.0703129074400515,
+      -0.9131573316083763
+    ],
+    "lens_clearance_status": "PREDICTED_INTERFERENCE",
+    "diagnostic_is_blocking": false,
+    "assumptions": "Rigid phone, ideal flat pad, no fabric compression; exact lens positions unmeasured.",
+    "scan_status": "Historical scan is not a gate: its earlier 72.1 mm width calibration is superseded.",
+    "physical_fit_status": "UNTESTED: provisional console and nub profiles; no clearance certification."
+  },
+  "slicing": {
+    "native_project": "Holder_V4_A1_PLA_PROTOTYPE.3mf",
+    "editable_studio_project": "Holder_V4_A1_PLA_PROTOTYPE_SLICED.3mf",
+    "sliced_plate": "Holder_V4_A1_PLA_PROTOTYPE.gcode.3mf",
+    "sliced_plate_sha256": "45272c19c1889961be0689e3fda4ade44003204beccf21d892604e30ee32f643",
+    "gui_gcode_md5_verified": true,
+    "gui_project_geometry_matches_stls": true,
+    "gui_export_warnings": [
+      "not_support_traditional_timelapse",
+      "not_support_traditional_timelapse"
+    ],
+    "actual_layers": {
+      "lower_edges_have_model_extrusion_through_1mm": true,
+      "lower_edge_path_points_by_layer_left_right": {
+        "0.2": [
+          348,
+          300
+        ],
+        "0.4": [
+          377,
+          417
+        ],
+        "0.6": [
+          378,
+          428
+        ],
+        "0.8": [
+          396,
+          419
+        ],
+        "1.0": [
+          192,
+          215
+        ]
+      },
+      "support_layers_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8
+      ],
+      "preview": "previews/sliced_layers.png",
+      "method": "Positive-extrusion G0/G1/G2/G3 moves from GUI-exported G-code; arcs sampled at <=0.3 mm."
+    },
+    "real_gcode": "slicer/Holder_V4_A1_PLA_PROTOTYPE/plate_1.gcode",
+    "sha256": "6ed64f177a64ca7a8f43b808624cf38662b1888997b8f2a631950c852014a4dc",
+    "slice_success": true,
+    "model_warnings": [],
+    "objects": 2,
+    "layers": 22,
+    "support_toolpaths": true,
+    "support_interface_toolpaths": true,
+    "orientation": "console side down",
+    "estimated_minutes": 72.07888997395834,
+    "filament_grams": 22.065248489379883,
+    "support_removal": "Access through the retained 19.4 mm underside mouths; actual removal is a physical test.",
+    "embedded_settings_match_slice": true
+  },
+  "physical_test_checklist": [
+    "Remove supports from underside nub openings and exterior edge rounds.",
+    "Seat both inserts independently: record rocking, high spots and end interference.",
+    "Check snug camera fit and phone-bottom access to the factory crease.",
+    "Check lens contact before pressing down; rigid flat-pad geometry predicts interference.",
+    "Compare stationary charging for 10 minutes against the bare-phone baseline.",
+    "A/B/C contour-gauge measurements remain pending."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-20T11:43:24.986662-07:00",
+  "printer": "3DP-039-180",
+  "model": "Bambu Lab A1",
+  "nozzle_mm": 0.4,
+  "project": "Holder_V4_A1_PLA_PROTOTYPE_SLICED",
+  "plate": "Holder_V4_A1_PLA_PROTOTYPE",
+  "status_observed_in_bambu_studio": "Preparing AMS",
+  "sent_via": "Bambu Studio Send print job / cloud service",
+  "filament": "PLA",
+  "ams_slot": "A1",
+  "auto_bed_leveling": true,
+  "flow_dynamics_calibration": true,
+  "timelapse": false,
+  "estimated_duration": "1h12m",
+  "estimated_filament_g": 22.07,
+  "authorization": "User requested printing now and confirmed the print bed is clear.",
+  "sliced_plate_sha256": "45272c19c1889961be0689e3fda4ade44003204beccf21d892604e30ee32f643"
+}

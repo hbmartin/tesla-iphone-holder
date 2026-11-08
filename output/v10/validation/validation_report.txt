@@ -1,0 +1,30 @@
+V10 VALIDATION REPORT — 2026-11-05
+Computational geometry: PASS
+Studio export: PASS
+Physical fit: UNTESTED SINGLE-PIECE FIT
+Printer dispatch: NO
+
+One valid single CAD solid; one watertight connected mesh.
+Left cutout shifted another 0.5 mm toward the wall; right cutout unchanged.
+79 width/center checks; 34 endpoint checks.
+Nine 6 mm bridge hexagons verified; solid attachments at both ends.
+Maximum installed thickness 4.4 mm; minimum sampled nub rail 2.051 mm.
+No changes outside the left opening and bridge construction region.
+Camera clearance and phone seating keepout preserved.
+
+One A1 plate, outward face down, 22 model layers at 0.20 mm.
+Three walls, 20% gyroid, PLA, 0.4 mm nozzle, 45-degree build-plate supports.
+Supports at print heights [0.2, 0.4, 0.6] mm.
+Both thin lower edges and the first-layer bridge paths verified.
+Studio geometry matches oriented STL, with no mesh repairs.
+G-code checksum and layer-by-layer model coverage match the CLI slice.
+Estimated 63 min 5 sec, 22.84 g PLA.
+Traditional timelapse warning: disable timelapse before dispatch.
+
+V9 output files preserved: 57.
+Opening center spacing: 94 mm. Test simultaneous engagement on both nubs.
+Lens diagnostic retained: predicted 1.03–2.15 mm interference on a rigid flat pad;
+physical lens clearance, fabric compression, console fit and charging unverified.
+
+Evidence: geometry_verification.json, orientation.json, slice_verification.json,
+gui_ready_verification.json and the dimensioned/sliced previews.

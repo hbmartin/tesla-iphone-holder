@@ -1,0 +1,475 @@
+{
+  "status": "PASS",
+  "plates": [
+    {
+      "status": "PASS",
+      "editable_project": "Holder_V7_A1_PLA_PROTOTYPE_SLICED.3mf",
+      "editable_project_sha256": "239db5daf142af46a1fb196dbb28b079496853e76bdb6fd8c59bdd4030b10547",
+      "sliced_plate": "Holder_V7_A1_PLA_PROTOTYPE.gcode.3mf",
+      "sliced_plate_sha256": "f9697713d3e89c7f270f33ba24747856d8c922cd7b39e0d7c89c33621ace3014",
+      "objects": 2,
+      "geometry_checks": [
+        {
+          "name": "left_insert_PROTOTYPE",
+          "stl_sha256": "8643056839c5e89334379567366b91610f4a801815194383f368fdbcc666430b",
+          "maximum_vertex_deviation_mm": 8.620388014203831e-06,
+          "mesh_repairs": 0
+        },
+        {
+          "name": "right_insert_PROTOTYPE",
+          "stl_sha256": "520d45e97a5045215e910ef64c48f76ec7019e1ee592f85e52fa13c310efbfe2",
+          "maximum_vertex_deviation_mm": 7.775501995417109e-06,
+          "mesh_repairs": 0
+        }
+      ],
+      "settings_verified": {
+        "printer_model": "Bambu Lab A1",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "3",
+        "sparse_infill_density": "20%",
+        "sparse_infill_pattern": "gyroid",
+        "enable_support": "1",
+        "support_type": "normal(auto)",
+        "support_style": "snug",
+        "support_on_build_plate_only": "1",
+        "support_top_z_distance": "0.2",
+        "support_object_xy_distance": "0.35",
+        "curr_bed_type": "Textured PEI Plate",
+        "xy_hole_compensation": "0",
+        "xy_contour_compensation": "0"
+      },
+      "embedded_gcode_checksum_verified": true,
+      "model_path_comparison_to_cli": [
+        {
+          "z": 0.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.8,
+          "sampled_deviation_mm": 0.09226954558873675,
+          "relative_length_difference": 1.4219510816775676e-07
+        },
+        {
+          "z": 2.0,
+          "sampled_deviation_mm": 0.07914213588069736,
+          "relative_length_difference": 1.9228079193018655e-07
+        },
+        {
+          "z": 2.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.4,
+          "sampled_deviation_mm": 0.06107372593839947,
+          "relative_length_difference": 7.025710576854501e-08
+        },
+        {
+          "z": 2.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        }
+      ],
+      "support_bounds_maximum_deviation_mm": 0.0,
+      "support_routing_note": "Support infill traversal may differ from CLI; per-object, per-layer bounds verified.",
+      "model_layers_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4
+      ],
+      "support_layers_mm": [
+        0.2,
+        0.473,
+        0.745,
+        1.018,
+        1.291,
+        1.564,
+        1.836,
+        2.109,
+        2.382,
+        2.655,
+        2.927,
+        3.2,
+        3.4,
+        3.6
+      ],
+      "total_z_events": 32,
+      "lower_edge_extrusion_points": {
+        "0.2": [
+          235,
+          379
+        ],
+        "0.4": [
+          261,
+          452
+        ],
+        "0.6": [
+          287,
+          442
+        ],
+        "0.8": [
+          260,
+          437
+        ],
+        "1.0": [
+          125,
+          223
+        ]
+      },
+      "warnings": [
+        "not_support_traditional_timelapse"
+      ],
+      "dispatch_guidance": "Disable timelapse; enable bed leveling and flow calibration.",
+      "estimated_seconds": 3030,
+      "filament_grams": 17.08,
+      "preview": "previews/ready_full_plate.png",
+      "printer_dispatch": false
+    },
+    {
+      "status": "PASS",
+      "editable_project": "Fit_tests_V7_A1_PLA_SLICED.3mf",
+      "editable_project_sha256": "c350831c3968b9d9ce2e039c551fe46ccc2bc645377b47dc9e67543b2717e522",
+      "sliced_plate": "Fit_tests_V7_A1_PLA.gcode.3mf",
+      "sliced_plate_sha256": "b5a1f8ff1138cc7f980e70b0a6fc072b5e1c8b6f4f9220430f7658747d8fbaab",
+      "objects": 7,
+      "geometry_checks": [
+        {
+          "name": "right_nub_clearance_03",
+          "stl_sha256": "721aa2e51e532f4d5fcbf7c6ac3e82c270daa3901934d09566129118e8cfe8b5",
+          "maximum_vertex_deviation_mm": 5.85948952314726e-06,
+          "mesh_repairs": 0
+        },
+        {
+          "name": "right_nub_clearance_05",
+          "stl_sha256": "000634ca0506e304317024cf66098567140ec891ed766c4e8df879e49b1537e5",
+          "maximum_vertex_deviation_mm": 5.798733538379078e-06,
+          "mesh_repairs": 0
+        },
+        {
+          "name": "right_nub_clearance_07",
+          "stl_sha256": "989a10880a7d8dbf5936129c4eaf7254ff888b34fdf608a20501b658148d1d08",
+          "maximum_vertex_deviation_mm": 5.798821777064746e-06,
+          "mesh_repairs": 0
+        },
+        {
+          "name": "left_nub_clearance_03",
+          "stl_sha256": "b476ac40ecb2405f62033af2a7f5897ac40a76bfd5ca60395be87ff620bdb7ec",
+          "maximum_vertex_deviation_mm": 8.162241112451664e-06,
+          "mesh_repairs": 0
+        },
+        {
+          "name": "left_nub_clearance_05",
+          "stl_sha256": "6019681b08a939ccaf6474b072967cf18502c44b2bcc150a57fc373ebab9aa1a",
+          "maximum_vertex_deviation_mm": 1.3936032702582968e-05,
+          "mesh_repairs": 0
+        },
+        {
+          "name": "left_nub_clearance_07",
+          "stl_sha256": "d824f42ac9896564818f2b601623a7fec866ad8c2b42322fbe33b003cec68e8e",
+          "maximum_vertex_deviation_mm": 1.3884029035899095e-05,
+          "mesh_repairs": 0
+        },
+        {
+          "name": "lower_left_corner_C7",
+          "stl_sha256": "16a324066b244e968fd8e72beed5d8db5fbbc60a4a5a58af7fd64541e738aa8a",
+          "maximum_vertex_deviation_mm": 1.394537813031682e-05,
+          "mesh_repairs": 0
+        }
+      ],
+      "settings_verified": {
+        "printer_model": "Bambu Lab A1",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "3",
+        "sparse_infill_density": "20%",
+        "sparse_infill_pattern": "gyroid",
+        "enable_support": "1",
+        "support_type": "normal(auto)",
+        "support_style": "snug",
+        "support_on_build_plate_only": "1",
+        "support_top_z_distance": "0.2",
+        "support_object_xy_distance": "0.35",
+        "curr_bed_type": "Textured PEI Plate",
+        "xy_hole_compensation": "0",
+        "xy_contour_compensation": "0"
+      },
+      "embedded_gcode_checksum_verified": true,
+      "model_path_comparison_to_cli": [
+        {
+          "z": 0.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.8,
+          "sampled_deviation_mm": 0.09999590686063975,
+          "relative_length_difference": 9.322200580223391e-07
+        },
+        {
+          "z": 2.0,
+          "sampled_deviation_mm": 0.060000000000002274,
+          "relative_length_difference": 2.2991231997801035e-08
+        },
+        {
+          "z": 2.2,
+          "sampled_deviation_mm": 0.09991392991981514,
+          "relative_length_difference": 9.79399119783634e-09
+        },
+        {
+          "z": 2.4,
+          "sampled_deviation_mm": 0.09827619047618441,
+          "relative_length_difference": 7.294938731692844e-16
+        },
+        {
+          "z": 2.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.0,
+          "sampled_deviation_mm": 0.09871705426355959,
+          "relative_length_difference": 9.83686880400676e-08
+        },
+        {
+          "z": 3.2,
+          "sampled_deviation_mm": 0.09949479209382162,
+          "relative_length_difference": 1.7053449074034127e-07
+        },
+        {
+          "z": 3.4,
+          "sampled_deviation_mm": 0.09975695403431928,
+          "relative_length_difference": 3.2349161598190344e-07
+        },
+        {
+          "z": 3.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        }
+      ],
+      "support_bounds_maximum_deviation_mm": 0.007695871879860761,
+      "support_routing_note": "Support infill traversal may differ from CLI; per-object, per-layer bounds verified.",
+      "model_layers_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4
+      ],
+      "support_layers_mm": [
+        0.2,
+        0.473,
+        0.745,
+        1.018,
+        1.291,
+        1.564,
+        1.836,
+        2.109,
+        2.382,
+        2.655,
+        2.927,
+        3.2,
+        3.4,
+        3.6
+      ],
+      "total_z_events": 32,
+      "lower_edge_extrusion_points": {},
+      "warnings": [
+        "not_support_traditional_timelapse"
+      ],
+      "dispatch_guidance": "Disable timelapse; enable bed leveling and flow calibration.",
+      "estimated_seconds": 3415,
+      "filament_grams": 21.59,
+      "preview": "previews/ready_fit_plate.png",
+      "printer_dispatch": false
+    }
+  ],
+  "printer_dispatch": false
+}

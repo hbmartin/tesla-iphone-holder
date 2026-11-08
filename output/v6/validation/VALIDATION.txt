@@ -1,0 +1,23 @@
+V6 COMPUTATIONAL GEOMETRY AND SLICE: PASS
+Two valid CAD solids; each exported STL is one watertight, consistently oriented component.
+No insert overlap; phone seating keepout and 65.1 x 42.1 mm camera aperture verified.
+Both nub openings: 13.5 mm underside and 5.6 mm upper. End positions unchanged from V5.
+Monotone nub interior and end transitions checked at 14 sections.
+Maximum Z 4.4 mm, below the 4.5 mm hard limit. Shared taper verified.
+Upper left edge retains the 2 mm inset; actual extra underside wall/front relief verified.
+Honeycomb: 15 left, 0 right; 1.6 mm web and added underside edge reserve checked.
+A1 PLA slice: 64.14 minutes, 21.61 g, 22 layers.
+0.4 mm nozzle, 0.20 mm layers, 3 walls, 20% gyroid; automatic build-plate supports present.
+Both lower rails have model extrusion at all five layers from 0.2 through 1.0 mm.
+Editable native 3MF has geometry and settings. Validated G-code is supplied separately.
+V4/V5 output hashes unchanged; all original source photographs unchanged.
+
+PHYSICAL FIT UNTESTED. Photo curves are normalized and dimensionally bounded, not a registered console scan.
+The existing 5 mm lens projection predicts 0.91–2.07 mm interference in the rigid flat-pad model.
+The retained opening targets are not certified to clear the actual photographed nubs.
+No printer dispatch. Remove supports before a physical fit test.
+
+BAMBU STUDIO PRINT PREPARATION: PASS
+Saved editable _SLICED.3mf and ready .gcode.3mf with verified embedded G-code checksum.
+Saved geometry matches both STLs. GUI settings and all 22 layers verified.
+Only traditional-timelapse notices are present; timelapse is off in the Send dialog.

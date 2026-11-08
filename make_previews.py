@@ -230,6 +230,33 @@ def revision_comparison(p):
 
 
 if __name__=="__main__":
-    p=json.loads((OUT/"validation/geometry_report.json").read_text())["parameters"]
-    top_view(p,profiles());perspective(p);gauges();taper_section(p)
-    print("Rendered assembly_top.png, assembly_3d.png and fit_gauges.png")
+    import argparse
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--output",type=Path,default=ROOT/"output/v10")
+    args=ap.parse_args()
+    OUT=args.output.resolve()
+    report=json.loads((OUT/"validation/geometry_report.json").read_text())
+    if report['revision']=='prototype-v10':
+        from previews_v10 import render
+        render(OUT)
+    elif report['revision']=='prototype-v9':
+        from previews_v9 import render
+        render(OUT)
+    elif report['revision']=='prototype-v8':
+        from previews_v8 import render
+        render(OUT)
+    elif report['revision']=='prototype-v7':
+        from previews_v7 import render
+        render(OUT)
+    elif report["revision"]=="prototype-v6":
+        from previews_v6 import render
+        render(OUT)
+    elif report["revision"]=="prototype-v5":
+        from previews_v5 import render
+        render(OUT)
+    elif report["revision"]=="prototype-v4":
+        from previews_v4 import render
+        render(OUT)
+    else:
+        p=report["parameters"]
+        top_view(p,profiles());perspective(p);gauges();taper_section(p)

@@ -1,0 +1,240 @@
+{
+  "status": "PASS",
+  "plates": [
+    {
+      "status": "PASS",
+      "editable_project": "Holder_V10_A1_PLA_OUTWARD_FACE_DOWN_SLICED.3mf",
+      "editable_project_sha256": "a033f1d14d66048d4038b7194ff3ed2715a467b2843b0ddbdd157c6e891376bf",
+      "sliced_plate": "Holder_V10_A1_PLA_OUTWARD_FACE_DOWN.gcode.3mf",
+      "sliced_plate_sha256": "b8ee526b45cad56498a2b638645dfe21b4ca7d63d7ad2d86b35068e32b8e484e",
+      "objects": 1,
+      "geometry_checks": [
+        {
+          "name": "holder_single_PROTOTYPE",
+          "stl_sha256": "daf6b194cdd289f492efae20b58a26ab77ffc487cb67d62ae0152cd2fbb52b56",
+          "maximum_vertex_deviation_mm": 8.884354532996526e-06,
+          "mesh_repairs": 0
+        }
+      ],
+      "settings_verified": {
+        "printer_model": "Bambu Lab A1",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "3",
+        "sparse_infill_density": "20%",
+        "sparse_infill_pattern": "gyroid",
+        "enable_support": "1",
+        "support_type": "normal(auto)",
+        "support_style": "snug",
+        "support_on_build_plate_only": "1",
+        "support_threshold_angle": "45",
+        "support_top_z_distance": "0.2",
+        "support_object_xy_distance": "0.35",
+        "curr_bed_type": "Textured PEI Plate",
+        "xy_hole_compensation": "0",
+        "xy_contour_compensation": "0"
+      },
+      "embedded_gcode_checksum_verified": true,
+      "model_path_comparison_to_cli": [
+        {
+          "z": 0.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 0.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 1.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 2.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.2,
+          "sampled_deviation_mm": 0.0883144581829582,
+          "relative_length_difference": 5.748676211727133e-07
+        },
+        {
+          "z": 3.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.6,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 3.8,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.0,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.2,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        },
+        {
+          "z": 4.4,
+          "sampled_deviation_mm": 0.0,
+          "relative_length_difference": 0.0
+        }
+      ],
+      "support_bounds_maximum_deviation_mm": 0.0,
+      "support_routing_note": "Support infill traversal may differ from CLI; per-object, per-layer bounds verified.",
+      "model_layers_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4
+      ],
+      "support_layers_mm": [
+        0.2,
+        0.4,
+        0.6
+      ],
+      "total_z_events": 22,
+      "print_leading_edge_extrusion_points": {
+        "0.2": [
+          779
+        ],
+        "0.4": [
+          900
+        ],
+        "0.6": [
+          1016
+        ],
+        "0.8": [
+          1070
+        ],
+        "1.0": [
+          715
+        ]
+      },
+      "structural_path_checks": {
+        "installed_lower_edges": {
+          "left": {
+            "0.2": 131,
+            "0.4": 157,
+            "0.6": 142,
+            "0.8": 155,
+            "1.0": 64
+          },
+          "right": {
+            "0.2": 216,
+            "0.4": 230,
+            "0.6": 238,
+            "0.8": 222,
+            "1.0": 107
+          }
+        },
+        "bridge_first_layer_crossings": {
+          "20": 28,
+          "30": 22,
+          "46.5": 20,
+          "65": 26,
+          "73": 22
+        }
+      },
+      "warnings": [
+        "not_support_traditional_timelapse"
+      ],
+      "dispatch_guidance": "Disable timelapse; enable bed leveling and flow calibration.",
+      "estimated_seconds": 3785,
+      "filament_grams": 22.84,
+      "preview": "previews/ready_full_plate.png",
+      "printer_dispatch": false
+    }
+  ],
+  "printer_dispatch": false
+}

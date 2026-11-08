@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-05",
+  "basis": "User-approved V9 plan: left shift 0.5 mm; right narrower 0.2 mm total, upper end shortened 0.4 mm; bottom fixed.",
+  "baseline": "output/v8/parameters.json",
+  "baseline_sha256": "1bec5ccd75049b4a4ee291fa3ad7f0c3a6e78380d06fae5f7e51eb74e5864dcc",
+  "photos": {
+    "IMG_0201.jpeg": "c46f4a4683ccaef6e624f2ca390df67294b18546d1d4c0f90827afb41dc6118c",
+    "IMG_0202.jpeg": "b629a4fd9b655411cf9e17d1cf2cb2f1cb80062b851e847559736a3b2746ca5e"
+  },
+  "limitation": "Adjustments are fit-test corrections, not dimensions measured from these photographs."
+}

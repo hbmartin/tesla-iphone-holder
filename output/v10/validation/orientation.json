@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "orientation": "Outward/phone-facing taper plane down, laid flat on the plate",
+  "rotation_x_degrees": 178.82854089960517,
+  "source_geometry_unchanged": true,
+  "parts": [
+    {
+      "part": "single_piece_holder",
+      "source": "holder_single_PROTOTYPE.stl",
+      "source_sha256": "8b0034474ec67cffc62a00e82596d7002507f436ea78d8b92baf6e8288280b99",
+      "print_mesh": "print/holder_single_PROTOTYPE.stl",
+      "print_mesh_sha256": "daf6b194cdd289f492efae20b58a26ab77ffc487cb67d62ae0152cd2fbb52b56",
+      "rigid_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          21.150394439697266
+        ],
+        [
+          0.0,
+          -0.9997909915370727,
+          -0.02044439388480216,
+          166.32520776947987
+        ],
+        [
+          0.0,
+          0.02044439388480216,
+          -0.9997909915370727,
+          0.9997913696985389
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "outward_plane_normal_after_rotation": [
+        0.0,
+        -4.85722573273506e-17,
+        -1.0
+      ],
+      "bed_contact_area_mm2": 6940.514839837719,
+      "print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          129.650390625,
+          166.3149871826172,
+          4.399080753326416
+        ]
+      ],
+      "volume_change_percent": -3.272172067006648e-07
+    }
+  ],
+  "printer_dispatch": false
+}
